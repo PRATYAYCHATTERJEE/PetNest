@@ -1,0 +1,58 @@
+
+/* Pet Store Category Navigation */
+.store-category-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 24px 0;
+    padding: 8px;
+    background: #ffffff;
+    border: 1px solid #e5ece6;
+    border-radius: 15px;
+    width: fit-content;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.store-category-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    color: #506357;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.store-category-btn i {
+    font-size: 16px;
+}
+
+.store-category-btn:hover {
+    background: #edf6ed;
+    color: #167343;
+}
+
+.store-category-btn.active {
+    background: #167743;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .store-category-nav {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .store-category-btn {
+        flex: 1 1 100%;
+        justify-content: flex-start;
+        padding: 12px 14px;
+    }
+}

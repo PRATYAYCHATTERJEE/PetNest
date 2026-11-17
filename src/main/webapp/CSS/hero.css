@@ -1,0 +1,614 @@
+/* =========================================
+   PET NEST — COMPLETE HERO SECTION
+========================================= */
+
+.hero,
+.hero * {
+    box-sizing: border-box;
+}
+
+.hero {
+    --forest: #205f40;
+    --forest-dark: #174b32;
+    --cream: #faf6ed;
+    --orange: #f08020;
+    --text: #242522;
+
+    position: relative;
+    isolation: isolate;
+
+    display: grid;
+    grid-template-columns: 46% 54%;
+    align-items: stretch;
+
+    width: calc(100% - 48px);
+    max-width: 1800px;
+    height: 620px;
+    min-height: 620px;
+
+    margin: 14px auto 42px;
+    padding: 0;
+
+    overflow: hidden;
+    border-radius: 22px;
+
+    background: var(--cream);
+    box-shadow: 0 8px 28px rgba(48, 58, 35, 0.07);
+}
+
+/* =========================================
+   BACKGROUND DECORATIONS
+========================================= */
+
+.hero-decoration {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+.hero-decoration-one {
+    width: 240px;
+    height: 240px;
+    top: -130px;
+    left: -95px;
+    background: rgba(214, 224, 192, 0.32);
+}
+
+.hero-decoration-two {
+    width: 230px;
+    height: 230px;
+    right: -145px;
+    bottom: -140px;
+    background: rgba(244, 221, 188, 0.35);
+}
+
+.hero-paw,
+.hero-heart {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+.hero-paw {
+    color: #7b6a88;
+    opacity: 0.55;
+    font-size: 25px;
+}
+
+.paw-one {
+    top: 42px;
+    left: 43%;
+    transform: rotate(-20deg);
+}
+
+.paw-two {
+    bottom: 24px;
+    left: 25px;
+    transform: rotate(18deg);
+}
+
+.hero-heart {
+    top: 45%;
+    left: 43%;
+    color: #f2a15d;
+    font-size: 23px;
+    transform: rotate(-14deg);
+}
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+
+    padding: 46px 20px 42px 8%;
+    background: transparent;
+}
+
+.hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 19px;
+
+    color: var(--forest);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2.2px;
+}
+
+.eyebrow-paw {
+    font-size: 22px;
+    line-height: 1;
+}
+
+.hero-content h1 {
+    width: 100%;
+    max-width: 570px;
+
+    margin: 0;
+
+    color: var(--text);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(42px, 3.5vw, 59px);
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -1.4px;
+}
+
+.hero-content h1 span {
+    color: var(--forest);
+    white-space: nowrap;
+}
+
+.hero-description {
+    margin: 22px 0 25px;
+
+    color: #60645e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* =========================================
+   CALL-TO-ACTION BUTTON
+========================================= */
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    min-height: 49px;
+    padding: 0 24px;
+
+    border: 1px solid var(--forest);
+    border-radius: 30px;
+
+    background: var(--forest);
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+    box-shadow: 0 7px 16px rgba(32, 95, 64, 0.13);
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.hero-btn:hover {
+    background: var(--forest-dark);
+    border-color: var(--forest-dark);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(32, 95, 64, 0.19);
+}
+
+.btn-arrow {
+    display: inline-block;
+    font-size: 21px;
+    line-height: 1;
+    transition: transform 0.25s ease;
+}
+
+.hero-btn:hover .btn-arrow {
+    transform: translateX(4px);
+}
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.hero-stats {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+    max-width: 540px;
+    margin-top: 36px;
+    gap: 13px;
+}
+
+.hero-stat {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.stat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    font-size: 19px;
+}
+
+.stat-orange {
+    background: #ffead5;
+    color: #ef780d;
+}
+
+.stat-green {
+    background: #e8efdc;
+    color: #36704b;
+}
+
+.stat-peach {
+    background: #f9e8d9;
+    color: #b85e25;
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 3px;
+}
+
+.stat-info strong {
+    color: var(--orange);
+    font-size: 22px;
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.stat-info span {
+    color: #72756f;
+    font-size: 10px;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+.stat-divider {
+    align-self: stretch;
+    flex: 0 0 1px;
+    min-height: 38px;
+    background: #dedbcc;
+}
+
+/* =========================================
+   RIGHT GALLERY — CONTAINED LAYOUT
+========================================= */
+
+.hero-gallery {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+
+    overflow: hidden;
+    background: transparent;
+}
+
+/* Large soft circle behind pets */
+
+.gallery-center-glow {
+    position: absolute;
+    width: 54%;
+    aspect-ratio: 1 / 1;
+
+    top: 24%;
+    left: 25%;
+
+    border-radius: 50%;
+    background: rgba(225, 233, 211, 0.58);
+    pointer-events: none;
+}
+
+/* Dotted elliptical path */
+
+.gallery-orbit {
+    position: absolute;
+
+    width: 86%;
+    height: 70%;
+
+    top: 15%;
+    left: 7%;
+
+    border: 1.5px dashed rgba(91, 133, 86, 0.7);
+    border-radius: 50%;
+
+    transform: rotate(-12deg);
+    pointer-events: none;
+}
+
+/* =========================================
+   CIRCULAR PET IMAGES
+========================================= */
+
+.pet-circle {
+    position: absolute;
+
+    display: block;
+    overflow: hidden;
+
+    border: 6px solid #ffffff;
+    border-radius: 50%;
+
+    background: #eee9dd;
+    box-shadow: 0 12px 28px rgba(48, 50, 35, 0.17);
+}
+
+.pet-circle img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 50%;
+}
+
+/* Main golden retriever */
+
+.pet-main {
+    z-index: 3;
+
+    width: 310px;
+    height: 310px;
+
+    left: 10%;
+    top: 23%;
+}
+
+/* Cat — upper right */
+
+.pet-cat {
+    z-index: 4;
+
+    width: 178px;
+    height: 178px;
+
+    right: 12%;
+    top: 6%;
+}
+
+/* Rabbit — middle/lower right */
+
+.pet-rabbit {
+    z-index: 3;
+
+    width: 174px;
+    height: 174px;
+
+    right: 5%;
+    top: 47%;
+}
+
+/* Parrot — bottom middle */
+
+.pet-parrot {
+    z-index: 4;
+
+    width: 158px;
+    height: 158px;
+
+    left: 43%;
+    bottom: 2%;
+}
+
+/* =========================================
+   FLOATING WHITE BADGES
+========================================= */
+
+.pet-badge {
+    position: absolute;
+    z-index: 6;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    width: 78px;
+    height: 78px;
+    padding: 7px;
+
+    border: 1px solid rgba(230, 224, 207, 0.4);
+    border-radius: 50%;
+
+    background: #fffefa;
+    color: #202820;
+
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.25;
+
+    box-shadow: 0 9px 22px rgba(52, 48, 32, 0.12);
+}
+
+.badge-icon {
+    color: var(--forest);
+    font-size: 21px;
+    line-height: 1;
+}
+
+.badge-love {
+    left: 0;
+    top: 48%;
+}
+
+.badge-love .badge-icon {
+    color: #176a46;
+}
+
+.badge-adopt {
+    right: 4%;
+    top: 8%;
+}
+
+.badge-care {
+    right: 0;
+    top: 53%;
+}
+
+.badge-home {
+    left: 42%;
+    bottom: 0;
+}
+
+.badge-home .badge-icon {
+    color: #b65b23;
+}
+
+/* =========================================
+   SMALL DECORATIVE DETAILS
+========================================= */
+
+.gallery-heart,
+.gallery-leaf {
+    position: absolute;
+    z-index: 5;
+    pointer-events: none;
+    user-select: none;
+}
+
+.gallery-heart {
+    color: #f49a52;
+    font-size: 21px;
+}
+
+.heart-one {
+    top: 7%;
+    left: 49%;
+    transform: rotate(-12deg);
+}
+
+.heart-two {
+    bottom: 19%;
+    left: 38%;
+    transform: rotate(12deg);
+}
+
+.gallery-leaf {
+    color: #72956e;
+    font-size: 45px;
+    line-height: 1;
+}
+
+.leaf-one {
+    left: 17%;
+    top: 9%;
+    transform: rotate(-35deg);
+}
+
+.leaf-two {
+    right: 2%;
+    top: 36%;
+    transform: rotate(35deg);
+}
+
+/* =========================================
+   LARGE DESKTOPS
+========================================= */
+
+@media (min-width: 1500px) {
+    .hero {
+        height: 650px;
+        min-height: 650px;
+    }
+
+    .pet-main {
+        width: 340px;
+        height: 340px;
+    }
+
+    .pet-cat,
+    .pet-rabbit {
+        width: 190px;
+        height: 190px;
+    }
+
+    .pet-parrot {
+        width: 170px;
+        height: 170px;
+    }
+
+    .hero-content h1 {
+        font-size: 62px;
+    }
+}
+
+/* =========================================
+   PREVENT THE NEXT SECTION FROM OVERLAPPING
+========================================= */
+
+.hero + section {
+    position: relative;
+    z-index: 0;
+    margin-top: 0;
+}
+
+
+
+/* Slightly move hero content upward */
+.hero-content {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+/* Keep the text group balanced */
+.hero-eyebrow {
+    margin-bottom: 16px;
+}
+
+.hero-description {
+    margin-top: 18px;
+    margin-bottom: 22px;
+}
+
+.hero-stats {
+    margin-top: 30px;
+}
+
+/* Move the pet gallery upward slightly too */
+.pet-main {
+    top: 20%;
+}
+
+.pet-cat {
+    top: 3%;
+}
+
+.pet-rabbit {
+    top: 44%;
+}
+
+.pet-parrot {
+    bottom: 5%;
+}

@@ -1,0 +1,139 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f7f4eb;
+    color: #263b2d;
+    min-height: 100vh;
+}
+
+.seller-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 16px;
+}
+
+.seller-card {
+    width: 100%;
+    max-width: 540px;
+    padding: 35px;
+    background: #fffdf8;
+    border: 1px solid #e6e5d8;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(34, 65, 45, 0.10);
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: #356747;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.brand {
+    color: #356747;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 29px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #777e72;
+    margin-bottom: 26px;
+    line-height: 1.5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 13px;
+    border: 1px solid #d9dfd3;
+    border-radius: 9px;
+    background: #fff;
+    color: #263b2d;
+    font: inherit;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #356747;
+    box-shadow: 0 0 0 3px rgba(53, 103, 71, 0.10);
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="file"] {
+    padding: 10px;
+    font-size: 13px;
+}
+
+button {
+    margin-top: 18px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #356747;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: #244d34;
+    transform: translateY(-1px);
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 23px;
+    font-size: 14px;
+    color: #697568;
+}
+
+.login-link a {
+    color: #356747;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .seller-card {
+        padding: 24px 19px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}

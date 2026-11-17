@@ -1,0 +1,1757 @@
+@import url('style.css');
+@import url('hero.css');
+@import url('pet.css');
+@import url('pet-details.css');
+
+
+
+
+/* =====================================
+   PET NEST - OUR SERVICES
+===================================== */
+
+.services-section {
+    width: 100%;
+    padding: 75px 5%;
+    background: #faf6ee;
+    box-sizing: border-box;
+}
+
+.services-section * {
+    box-sizing: border-box;
+}
+
+.services-container {
+    max-width: 1250px;
+    margin: auto;
+}
+
+/* HEADING */
+
+.services-heading {
+    text-align: center;
+    max-width: 580px;
+    margin: 0 auto 55px;
+}
+
+.services-label {
+    display: block;
+    color: #c65b35;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.services-heading h2 {
+    margin: 0;
+    color: #242820;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(34px, 3vw, 44px);
+    font-weight: 700;
+}
+
+.services-heading h2 span {
+    color: #306642;
+}
+
+.services-heading p {
+    margin: 13px auto 0;
+    max-width: 470px;
+    color: #77786e;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* SERVICES GRID */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+    gap: 28px;
+}
+
+/* SERVICE CARD */
+
+.service-card {
+    position: relative;
+    min-height: 245px;
+    padding: 30px 23px;
+    border: 1px solid rgba(255,255,255,.8);
+    border-radius: 24px;
+    background: #fffefa;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(65, 63, 43, .055);
+    transition: transform .3s ease,
+                box-shadow .3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(65, 63, 43, .12);
+}
+
+/* STAGGERED DESIGN */
+
+.grooming-card {
+    transform: translateY(28px);
+}
+
+.grooming-card:hover {
+    transform: translateY(18px);
+}
+
+.teeth-card {
+    transform: translateY(-12px);
+}
+
+.teeth-card:hover {
+    transform: translateY(-20px);
+}
+
+.veterinary-card {
+    transform: translateY(28px);
+}
+
+.veterinary-card:hover {
+    transform: translateY(18px);
+}
+
+/* ICON BOX */
+
+.service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 18px;
+    border-radius: 12px;
+    background: #e96542;
+    color: #fff;
+    font-size: 25px;
+    box-shadow: 0 7px 15px rgba(233, 101, 66, .18);
+    transition: transform .3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: rotate(-5deg) scale(1.08);
+}
+
+/* TEXT */
+
+.service-card h3 {
+    margin: 0 0 10px;
+    color: #292b25;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.service-card p {
+    max-width: 260px;
+    margin: 0 auto;
+    color: #77766e;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* SERVICE LINK */
+
+.service-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 17px;
+    color: #306642;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.service-link span {
+    font-size: 17px;
+    transition: transform .2s ease;
+}
+
+.service-link:hover span {
+    transform: translateX(5px);
+}
+
+/* TABLET */
+
+@media (max-width: 850px) {
+
+    .services-section {
+        padding: 60px 5%;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .grooming-card,
+    .teeth-card,
+    .veterinary-card {
+        transform: none;
+    }
+
+    .grooming-card:hover,
+    .teeth-card:hover,
+    .veterinary-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .veterinary-card {
+        grid-column: 1 / -1;
+        width: calc(50% - 10px);
+        justify-self: center;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 550px) {
+
+    .services-section {
+        padding: 48px 18px;
+    }
+
+    .services-heading {
+        margin-bottom: 35px;
+    }
+
+    .services-heading h2 {
+        font-size: 32px;
+    }
+
+    .services-heading p {
+        font-size: 13px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .service-card {
+        min-height: 220px;
+        padding: 27px 20px;
+    }
+
+    .veterinary-card {
+        grid-column: auto;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   PET NEST - VETERINARY DOCTORS
+========================================== */
+
+.vet-team-section {
+    position: relative;
+    width: 100%;
+    padding: 75px 5% 65px;
+    overflow: hidden;
+    background: #fffaf3;
+    box-sizing: border-box;
+}
+
+.vet-team-section *,
+.vet-team-section *::before,
+.vet-team-section *::after {
+    box-sizing: border-box;
+}
+
+.vet-team-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1380px;
+    margin: auto;
+}
+
+/* HEADING */
+
+.vet-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.vet-heading > span {
+    display: block;
+    margin-bottom: 10px;
+    color: #e66a42;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.vet-heading h2 {
+    margin: 0;
+    color: #252a2c;
+    font-size: clamp(30px, 3vw, 43px);
+    font-weight: 750;
+    line-height: 1.25;
+}
+
+.vet-heading h2 strong {
+    color: #e96542;
+}
+
+/* DOCTOR GRID */
+
+.vet-doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 28px;
+    align-items: start;
+}
+
+/* DOCTOR CARD */
+
+.vet-doctor-card {
+    min-width: 0;
+    text-align: center;
+    transition: transform .3s ease;
+}
+
+.vet-doctor-card:hover {
+    transform: translateY(-7px);
+}
+
+/* CIRCULAR IMAGE */
+
+.vet-doctor-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.vet-image-ring {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 210px;
+    max-width: 100%;
+    border: 13px solid #ffeadf;
+    border-radius: 50%;
+    background: #f16b35;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px rgba(241, 107, 53, .08);
+}
+
+.vet-image-ring img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    transition: transform .4s ease;
+}
+
+.vet-doctor-card:hover .vet-image-ring img {
+    transform: scale(1.07);
+}
+
+/* DOCTOR DETAILS */
+
+.vet-doctor-card h3 {
+    margin: 0 0 7px;
+    color: #262b2d;
+    font-size: 21px;
+    font-weight: 750;
+}
+
+.vet-doctor-card > p {
+    margin: 0;
+    color: #73736e;
+    font-size: 14px;
+}
+
+/* SOCIAL ICONS */
+
+.vet-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 11px;
+    margin-top: 17px;
+}
+
+.vet-social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: #ed673e;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    transition: .25s ease;
+}
+
+.vet-social-links a:hover {
+    background: #c94e2c;
+    transform: translateY(-3px);
+}
+
+/* VIEW ALL */
+
+.vet-view-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.vet-view-all a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-width: 155px;
+    min-height: 48px;
+    padding: 0 25px;
+    border-radius: 5px;
+    background: #ed673e;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .25s ease;
+}
+
+.vet-view-all a span {
+    font-size: 21px;
+    transition: transform .25s ease;
+}
+
+.vet-view-all a:hover {
+    background: #cb4f2d;
+    box-shadow: 0 7px 17px rgba(237, 103, 62, .22);
+}
+
+.vet-view-all a:hover span {
+    transform: translateX(5px);
+}
+
+/* DECORATIVE SHAPES */
+
+.vet-team-section::before {
+    content: "🐾";
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    color: #f5d8c9;
+    font-size: 90px;
+    opacity: .45;
+    transform: rotate(-20deg);
+    pointer-events: none;
+}
+
+.vet-team-section::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    left: -65px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: #e6f0d6;
+    opacity: .8;
+    pointer-events: none;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+    .vet-doctors-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 40px;
+    }
+
+    .vet-image-ring {
+        width: 195px;
+        height: 195px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 550px) {
+    .vet-team-section {
+        padding: 55px 18px;
+    }
+
+    .vet-heading {
+        margin-bottom: 35px;
+    }
+
+    .vet-heading h2 {
+        font-size: 28px;
+    }
+
+    .vet-doctors-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 32px 12px;
+    }
+
+    .vet-image-ring {
+        width: min(100%, 155px);
+        height: auto;
+        aspect-ratio: 1;
+        border-width: 9px;
+    }
+
+    .vet-doctor-card h3 {
+        font-size: 15px;
+    }
+
+    .vet-doctor-card > p {
+        font-size: 11px;
+    }
+
+    .vet-social-links {
+        margin-top: 12px;
+        gap: 8px;
+    }
+
+    .vet-social-links a {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+    }
+
+    .vet-view-all {
+        margin-top: 35px;
+    }
+}
+
+
+
+
+
+
+/* =====================================
+   PET NEST - SELL YOUR PET BANNER
+===================================== */
+
+.sell-pet-section {
+    width: 100%;
+    padding: 45px 4%;
+    background: #fffaf3;
+    box-sizing: border-box;
+}
+
+.sell-pet-section *,
+.sell-pet-section *::before,
+.sell-pet-section *::after {
+    box-sizing: border-box;
+}
+
+.sell-pet-banner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 1450px;
+    min-height: 205px;
+    margin: auto;
+    padding: 15px 35px 15px 15px;
+    overflow: hidden;
+    border: 1px solid #eee8dc;
+    border-radius: 25px;
+    background: #faf6ee;
+}
+
+/* DECORATIVE SHAPES */
+
+.sell-pet-banner::before {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: -45px;
+    width: 150px;
+    height: 120px;
+    border-radius: 50%;
+    background: #e8efd9;
+    opacity: .8;
+}
+
+.sell-pet-banner::after {
+    content: "";
+    position: absolute;
+    right: -45px;
+    bottom: -75px;
+    width: 190px;
+    height: 125px;
+    border-radius: 50%;
+    background: #e5edd5;
+}
+
+/* PET IMAGE */
+
+.sell-pet-image {
+    position: relative;
+    z-index: 1;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.sell-pet-image img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    object-position: center bottom;
+    transition: transform .35s ease;
+}
+
+.sell-pet-banner:hover .sell-pet-image img {
+    transform: scale(1.04);
+}
+
+/* CONTENT */
+
+.sell-pet-content {
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+}
+
+.sell-pet-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sell-pet-title > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53px;
+    height: 53px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #ed744c;
+    color: #fff;
+    font-size: 25px;
+    transform: rotate(-5deg);
+}
+
+.sell-pet-title h2 {
+    margin: 0;
+    color: #252620;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(30px, 3vw, 47px);
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+.sell-pet-title h2 span {
+    color: #276344;
+}
+
+.sell-pet-content p {
+    margin: 14px 0 0;
+    color: #686b63;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* BUTTON */
+
+.sell-pet-action {
+    position: relative;
+    z-index: 2;
+}
+
+.sell-pet-action a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    min-width: 190px;
+    min-height: 55px;
+    padding: 0 25px;
+    border-radius: 35px;
+    background: #206344;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    white-space: nowrap;
+    box-shadow: 0 7px 16px rgba(32, 99, 68, .13);
+    transition: .25s ease;
+}
+
+.sell-pet-action a span {
+    font-size: 23px;
+    transition: transform .25s ease;
+}
+
+.sell-pet-action a:hover {
+    background: #174d34;
+    transform: translateY(-3px);
+}
+
+.sell-pet-action a:hover span {
+    transform: translateX(5px);
+}
+
+/* PAW DECORATION */
+
+.sell-paw {
+    position: absolute;
+    top: 25px;
+    right: 28%;
+    color: #edc4ad;
+    font-size: 32px;
+    opacity: .55;
+    transform: rotate(20deg);
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+    .sell-pet-banner {
+        grid-template-columns: 170px minmax(0, 1fr);
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .sell-pet-image img {
+        height: 165px;
+    }
+
+    .sell-pet-action {
+        grid-column: 2;
+    }
+
+    .sell-pet-action a {
+        min-height: 46px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .sell-pet-section {
+        padding: 25px 15px;
+    }
+
+    .sell-pet-banner {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 18px;
+    }
+
+    .sell-pet-image img {
+        height: 155px;
+    }
+
+    .sell-pet-title {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .sell-pet-title > i {
+        width: 40px;
+        height: 40px;
+        font-size: 19px;
+    }
+
+    .sell-pet-title h2 {
+        font-size: 31px;
+    }
+
+    .sell-pet-content p {
+        margin-top: 10px;
+        font-size: 13px;
+    }
+
+    .sell-pet-action {
+        grid-column: auto;
+        margin-top: 5px;
+    }
+
+    .sell-pet-action a {
+        min-width: 175px;
+    }
+
+    .sell-paw {
+        top: 12px;
+        right: 15px;
+        font-size: 23px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================
+   PET NEST - BUY PET PRODUCTS
+===================================== */
+
+.buy-products-section {
+    width: 100%;
+    padding: 20px 4% 45px;
+    background: #fffaf3;
+    box-sizing: border-box;
+}
+
+.buy-products-section *,
+.buy-products-section *::before,
+.buy-products-section *::after {
+    box-sizing: border-box;
+}
+
+.buy-products-banner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 1450px;
+    min-height: 205px;
+    margin: auto;
+    padding: 15px 35px 15px 15px;
+    overflow: hidden;
+    border: 1px solid #eee8dc;
+    border-radius: 25px;
+    background: #faf6ee;
+}
+
+/* DECORATIVE SHAPES */
+
+.buy-products-banner::before {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: -45px;
+    width: 150px;
+    height: 120px;
+    border-radius: 50%;
+    background: #e8efd9;
+    opacity: .8;
+}
+
+.buy-products-banner::after {
+    content: "";
+    position: absolute;
+    right: -45px;
+    bottom: -75px;
+    width: 190px;
+    height: 125px;
+    border-radius: 50%;
+    background: #e5edd5;
+}
+
+/* IMAGE */
+
+.buy-products-image {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.buy-products-image img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    object-position: center bottom;
+    transition: transform .35s ease;
+}
+
+.buy-products-banner:hover .buy-products-image img {
+    transform: scale(1.04);
+}
+
+/* CONTENT */
+
+.buy-products-content {
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+}
+
+.buy-products-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.buy-products-title > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53px;
+    height: 53px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #ed9440;
+    color: #fff;
+    font-size: 24px;
+    transform: rotate(-5deg);
+}
+
+.buy-products-title h2 {
+    margin: 0;
+    color: #252620;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(29px, 3vw, 45px);
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+.buy-products-title h2 span {
+    color: #276344;
+}
+
+.buy-products-content p {
+    margin: 14px 0 0;
+    color: #686b63;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* SHOP BUTTON */
+
+.buy-products-action {
+    position: relative;
+    z-index: 2;
+}
+
+.buy-products-action a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    min-width: 185px;
+    min-height: 55px;
+    padding: 0 25px;
+    border-radius: 35px;
+    background: #206344;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    white-space: nowrap;
+    box-shadow: 0 7px 16px rgba(32, 99, 68, .13);
+    transition: .25s ease;
+}
+
+.buy-products-action a span {
+    font-size: 23px;
+    transition: transform .25s ease;
+}
+
+.buy-products-action a:hover {
+    background: #174d34;
+    transform: translateY(-3px);
+}
+
+.buy-products-action a:hover span {
+    transform: translateX(5px);
+}
+
+/* PAW DECORATION */
+
+.buy-products-paw {
+    position: absolute;
+    top: 25px;
+    right: 28%;
+    color: #edc4ad;
+    font-size: 32px;
+    opacity: .55;
+    transform: rotate(20deg);
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+    .buy-products-banner {
+        grid-template-columns: 170px minmax(0, 1fr);
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .buy-products-image img {
+        height: 165px;
+    }
+
+    .buy-products-action {
+        grid-column: 2;
+    }
+
+    .buy-products-action a {
+        min-height: 46px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .buy-products-section {
+        padding: 20px 15px 30px;
+    }
+
+    .buy-products-banner {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 18px;
+    }
+
+    .buy-products-image img {
+        height: 155px;
+    }
+
+    .buy-products-title {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .buy-products-title > i {
+        width: 40px;
+        height: 40px;
+        font-size: 19px;
+    }
+
+    .buy-products-title h2 {
+        font-size: 29px;
+    }
+
+    .buy-products-content p {
+        margin-top: 10px;
+        font-size: 13px;
+    }
+
+    .buy-products-action {
+        grid-column: auto;
+        margin-top: 5px;
+    }
+
+    .buy-products-action a {
+        min-width: 175px;
+    }
+
+    .buy-products-paw {
+        top: 12px;
+        right: 15px;
+        font-size: 23px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   PET NEST - ABOUT US SECTION
+========================================== */
+
+.about-pet-section {
+    position: relative;
+    width: 100%;
+    min-height: 610px;
+    padding: 85px 5%;
+    overflow: hidden;
+    background: #fffaf3;
+    box-sizing: border-box;
+}
+
+.about-pet-section *,
+.about-pet-section *::before,
+.about-pet-section *::after {
+    box-sizing: border-box;
+}
+
+.about-pet-container {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    align-items: center;
+    gap: 65px;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* LEFT CONTENT */
+
+.about-pet-content {
+    min-width: 0;
+}
+
+.about-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    color: #e96c3d;
+}
+
+.about-eyebrow i {
+    font-size: 29px;
+}
+
+.about-eyebrow span {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.about-pet-content h2 {
+    margin: 0 0 25px;
+    color: #252a29;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(42px, 4.5vw, 65px);
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+}
+
+.about-pet-content h2 span {
+    color: #276344;
+}
+
+.about-description {
+    max-width: 690px;
+    margin: 0 0 35px;
+    color: #555e57;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.about-description strong {
+    color: #252a29;
+}
+
+/* FEATURE HIGHLIGHTS */
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 13px;
+    margin-bottom: 38px;
+}
+
+.about-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 145px;
+    padding: 15px 8px;
+    border-radius: 22px;
+    background: #f1f0e3;
+    text-align: center;
+    transition: transform .3s ease,
+                background .3s ease;
+}
+
+.about-feature:hover {
+    transform: translateY(-6px);
+    background: #e9efdd;
+}
+
+.about-feature i {
+    margin-bottom: 14px;
+    color: #e96c3d;
+    font-size: 38px;
+}
+
+.about-feature h4 {
+    margin: 0;
+    color: #29312b;
+    font-size: 14px;
+    font-weight: 750;
+    line-height: 1.4;
+}
+
+/* LEARN MORE BUTTON */
+
+.about-learn-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    min-height: 57px;
+    padding: 0 30px;
+    border-radius: 35px;
+    background: #24663d;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(36, 102, 61, .12);
+    transition: .3s ease;
+}
+
+.about-learn-btn span {
+    font-size: 23px;
+    transition: transform .3s ease;
+}
+
+.about-learn-btn:hover {
+    background: #174d2d;
+    transform: translateY(-3px);
+}
+
+.about-learn-btn:hover span {
+    transform: translateX(5px);
+}
+
+/* RIGHT VISUAL */
+
+.about-pet-visual {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 440px;
+}
+
+.about-image-frame {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 430px;
+    padding: 10px;
+    overflow: hidden;
+    border: 7px solid #a7bf8d;
+    border-radius: 42% 58% 48% 52% / 45% 43% 57% 55%;
+    background: #e8efdc;
+    box-shadow: 0 18px 40px rgba(48, 75, 43, .10);
+}
+
+.about-image-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .5s ease;
+}
+
+.about-image-frame:hover img {
+    transform: scale(1.04);
+}
+
+/* DECORATIVE ELEMENTS */
+
+.about-heart {
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #fff1e7;
+    color: #ed794b;
+    font-size: 30px;
+    transform: rotate(12deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .06);
+}
+
+.about-paw {
+    position: absolute;
+    z-index: 2;
+    right: -12px;
+    bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fffaf3;
+    color: #73965b;
+    font-size: 38px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .06);
+}
+
+/* BACKGROUND DECORATION */
+
+.about-pet-section::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -80px;
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    background: #e5edd7;
+    opacity: .65;
+}
+
+.about-pet-section::after {
+    content: "";
+    position: absolute;
+    right: -100px;
+    bottom: -130px;
+    width: 350px;
+    height: 240px;
+    border-radius: 50%;
+    background: #e5edd7;
+    opacity: .65;
+}
+
+/* TABLET */
+
+@media (max-width: 1050px) {
+
+    .about-pet-section {
+        padding: 70px 5%;
+    }
+
+    .about-pet-container {
+        gap: 35px;
+    }
+
+    .about-features {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-feature {
+        min-height: 125px;
+    }
+
+    .about-pet-visual {
+        min-height: 360px;
+    }
+
+    .about-image-frame {
+        height: 360px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .about-pet-section {
+        padding: 55px 20px;
+    }
+
+    .about-pet-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-pet-content {
+        text-align: center;
+    }
+
+    .about-eyebrow {
+        justify-content: center;
+    }
+
+    .about-pet-content h2 {
+        font-size: 39px;
+    }
+
+    .about-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .about-features {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .about-feature {
+        min-height: 120px;
+    }
+
+    .about-feature i {
+        font-size: 31px;
+    }
+
+    .about-feature h4 {
+        font-size: 13px;
+    }
+
+    .about-pet-visual {
+        min-height: 310px;
+        padding: 0 12px;
+    }
+
+    .about-image-frame {
+        height: 310px;
+        max-width: 480px;
+    }
+
+    .about-heart {
+        right: 0;
+        width: 52px;
+        height: 52px;
+        font-size: 23px;
+    }
+
+    .about-paw {
+        right: 0;
+        width: 60px;
+        height: 60px;
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .about-pet-content h2 {
+        font-size: 34px;
+    }
+
+    .about-pet-visual {
+        min-height: 260px;
+    }
+
+    .about-image-frame {
+        height: 260px;
+    }
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   PET NEST - CONTACT US
+===================================== */
+
+.contact-section {
+    position: relative;
+    width: 100%;
+    padding: 85px 5%;
+    overflow: hidden;
+    background: #fffaf3;
+    box-sizing: border-box;
+}
+
+.contact-section * {
+    box-sizing: border-box;
+}
+
+.contact-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+}
+
+/* HEADING */
+
+.contact-heading {
+    margin-bottom: 55px;
+}
+
+.contact-heading > span {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 15px;
+    color: #e96c3d;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.contact-heading > span i {
+    font-size: 26px;
+}
+
+.contact-heading h2 {
+    margin: 0;
+    color: #252a29;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 4.5vw, 58px);
+    line-height: 1.2;
+}
+
+.contact-heading h2 strong {
+    color: #276344;
+}
+
+.contact-heading p {
+    margin: 16px 0 0;
+    color: #70766e;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* MAIN LAYOUT */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    align-items: center;
+    gap: 45px;
+}
+
+/* CONTACT CARDS */
+
+.contact-information {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.contact-info-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-height: 125px;
+    padding: 20px;
+    border-radius: 22px;
+    background: #f0f0e2;
+    transition: .3s ease;
+}
+
+.contact-info-card:hover {
+    background: #e8efdc;
+    transform: translateY(-5px);
+}
+
+.contact-info-icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 17px;
+    background: #347747;
+    color: white;
+    font-size: 27px;
+}
+
+.contact-info-card h3 {
+    margin: 0 0 8px;
+    color: #26302a;
+    font-size: 18px;
+    font-weight: 750;
+}
+
+.contact-info-card p {
+    margin: 0;
+    color: #626a62;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* PET IMAGE */
+
+.contact-pet-visual {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 390px;
+}
+
+.contact-pet-visual img {
+    display: block;
+    width: 100%;
+    height: 390px;
+    object-fit: contain;
+    object-position: center bottom;
+    transition: transform .4s ease;
+}
+
+.contact-pet-visual:hover img {
+    transform: scale(1.04);
+}
+
+.contact-heart {
+    position: absolute;
+    top: 15%;
+    right: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #fff0e5;
+    color: #e96c3d;
+    font-size: 29px;
+}
+
+/* BACKGROUND DECORATION */
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -80px;
+    width: 280px;
+    height: 190px;
+    border-radius: 50%;
+    background: #e5edd7;
+    opacity: .75;
+}
+
+.contact-section::after {
+    content: "🐾";
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #f0d9c9;
+    font-size: 85px;
+    opacity: .4;
+    transform: rotate(20deg);
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-pet-visual {
+        min-height: 300px;
+    }
+
+    .contact-pet-visual img {
+        height: 300px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .contact-section {
+        padding: 55px 18px;
+    }
+
+    .contact-heading {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .contact-heading > span {
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    .contact-heading h2 {
+        font-size: 34px;
+    }
+
+    .contact-heading p {
+        font-size: 14px;
+    }
+
+    .contact-information {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .contact-info-card {
+        min-height: 95px;
+        padding: 14px;
+        gap: 15px;
+    }
+
+    .contact-info-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 21px;
+    }
+
+    .contact-info-card h3 {
+        font-size: 16px;
+    }
+
+    .contact-info-card p {
+        font-size: 12px;
+    }
+
+    .contact-pet-visual {
+        min-height: 250px;
+    }
+
+    .contact-pet-visual img {
+        height: 250px;
+    }
+
+    .contact-heart {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+    }
+}
+
+
+

@@ -1,0 +1,406 @@
+
+/* =========================================
+   PET NEST — GLOBAL STYLES
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pet-green: #245c3a;
+    --pet-green-dark: #19472c;
+    --pet-green-light: #edf5ed;
+    --pet-cream: #fbf8f0;
+    --pet-text: #25352a;
+    --pet-muted: #778177;
+    --pet-border: #e6ebe4;
+    --pet-white: #ffffff;
+}
+
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background: var(--pet-white);
+    color: var(--pet-text);
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    height: 72px;
+    background: var(--pet-white);
+    border-bottom: 1px solid var(--pet-border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(25, 71, 44, 0.035);
+}
+
+/* =========================================
+   NAV CONTAINER
+========================================= */
+
+.nav-container {
+    width: 92%;
+    max-width: 1680px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) auto minmax(220px, 1fr);
+    align-items: center;
+    column-gap: 28px;
+}
+
+/* =========================================
+   LOGO AND BRAND
+========================================= */
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-self: start;
+    gap: 11px;
+
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.logo-image {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-image {
+    transform: translateY(-1px);
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.05;
+}
+
+.logo-name {
+    font-size: 29px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    color: var(--pet-green);
+}
+
+.logo-tagline {
+    margin-top: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: var(--pet-muted);
+}
+
+/* =========================================
+   CENTER NAVIGATION
+========================================= */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 29px;
+    white-space: nowrap;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 0;
+    text-decoration: none;
+
+    color: #424c43;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+
+    transition: color 0.25s ease;
+}
+
+/* Animated underline */
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background: var(--pet-green);
+
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.25s ease;
+}
+
+.nav-link:hover {
+    color: var(--pet-green);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: scaleX(1);
+}
+
+.nav-link.active {
+    color: var(--pet-green);
+    font-weight: 700;
+}
+
+/* =========================================
+   RIGHT SECTION
+========================================= */
+
+.nav-right,
+.nav-auth {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.nav-right {
+    justify-self: end;
+    min-width: 0;
+}
+
+/* =========================================
+   SHARED BUTTON STYLES
+========================================= */
+
+.nav-btn,
+.nav-auth .login-btn,
+.nav-auth .register-btn {
+    min-width: 108px;
+    height: 42px;
+    padding: 0 22px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 26px;
+    text-decoration: none;
+    white-space: nowrap;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 650;
+    letter-spacing: 0.1px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-btn {
+    color: var(--pet-green);
+    background: var(--pet-white);
+    border: 1px solid #b9cdbd;
+}
+
+.login-btn:hover {
+    color: var(--pet-green-dark);
+    background: var(--pet-green-light);
+    border-color: var(--pet-green);
+    transform: translateY(-1px);
+}
+
+/* =========================================
+   REGISTER BUTTON
+========================================= */
+
+.register-btn {
+    color: var(--pet-white);
+    background: var(--pet-green);
+    border: 1px solid var(--pet-green);
+
+    box-shadow: 0 3px 9px rgba(36, 92, 58, 0.10);
+}
+
+.register-btn:hover {
+    color: var(--pet-white);
+    background: var(--pet-green-dark);
+    border-color: var(--pet-green-dark);
+
+    box-shadow: 0 5px 12px rgba(36, 92, 58, 0.17);
+    transform: translateY(-1px);
+}
+
+/* =========================================
+   LOGGED-IN USER PROFILE
+========================================= */
+
+.user-profile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    padding: 5px 11px 5px 6px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+
+    text-decoration: none;
+    color: var(--pet-text);
+    white-space: nowrap;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.user-profile:hover {
+    background: var(--pet-green-light);
+    border-color: #dce9dc;
+}
+
+/* Profile icon */
+
+.profile-icon {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: var(--pet-green-light);
+    color: var(--pet-green);
+
+    font-size: 16px;
+}
+
+/* Username */
+
+.user-name {
+    font-size: 13px;
+    font-weight: 650;
+    color: var(--pet-green);
+}
+
+/* =========================================
+   KEYBOARD ACCESSIBILITY
+========================================= */
+
+.nav-link:focus-visible,
+.nav-btn:focus-visible,
+.login-btn:focus-visible,
+.register-btn:focus-visible,
+.user-profile:focus-visible {
+    outline: 3px solid rgba(36, 92, 58, 0.3);
+    outline-offset: 3px;
+}
+
+/* =========================================
+   DESKTOP ONLY
+========================================= */
+
+.menu-toggle {
+    display: none;
+}
+
+/* =========================================
+   END OF PET NEST NAVBAR
+========================================= */
+
+
+/* =========================================
+   PET NEST — NAVBAR MATCHING HERO
+========================================= */
+
+.navbar {
+    background: #faf6ed;
+    border-bottom: 1px solid #eee6d8;
+    box-shadow: 0 3px 12px rgba(63, 65, 43, 0.04);
+}
+
+/* Keep navbar content transparent */
+.nav-container {
+    background: transparent;
+}
+
+/* Navigation links */
+.nav-link {
+    color: #424b40;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #205f40;
+}
+
+.nav-link.active::after {
+    background: #205f40;
+}
+
+/* Login button */
+.login-btn {
+    background: #faf6ed;
+    color: #205f40;
+    border-color: #b9cfbb;
+}
+
+.login-btn:hover {
+    background: #e9efdf;
+    color: #205f40;
+    border-color: #205f40;
+}
+
+/* Register button */
+.register-btn {
+    background: #205f40;
+    color: #ffffff;
+    border-color: #205f40;
+}
+
+.register-btn:hover {
+    background: #174b32;
+    border-color: #174b32;
+}
+
+/* Logged-in profile, if displayed */
+.user-profile:hover {
+    background: #eeeede;
+}
+
+.profile-icon {
+    background: #e8efdc;
+    color: #205f40;
+}
+
+.user-name {
+    color: #205f40;
+}
+
