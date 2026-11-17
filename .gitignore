@@ -1,1 +1,29 @@
-/build/
+
+# Java compiled files
+*.class
+bin/
+build/
+target/
+
+# Eclipse settings
+.metadata/
+.settings/
+*.launch
+
+# Temporary files
+*.log
+*.tmp
+
+# Windows and macOS
+.DS_Store
+Thumbs.db
+
+# Private credentials
+.env
+.env.*
+!.env.example
+db.properties
+
+# Keep database backup in GitHub
+!database/
+!database/petcare.sql
