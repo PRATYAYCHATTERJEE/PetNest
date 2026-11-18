@@ -10,7 +10,7 @@
     <title>Petora | Veterinarian Login</title>
 
     <!-- Existing CSS -->
-    <link rel="stylesheet" href="CSS/auth.css">
+<link rel="stylesheet" href="CSS/doctor-login.css">
 </head>
 
 <body>

@@ -246,7 +246,7 @@
                 </div>
 
                 <div class="hero-image">
-                    <img src="images/dashboard-hero.jpg"
+                    <img src="images/heropet1.png"
                          alt="Happy dog and cat">
                 </div>
 
@@ -697,64 +697,216 @@
              ADOPTION
         ================================================== -->
 
-        <section id="adoption" class="page-section">
+       
+<section id="adoption" class="page-section seller-partner-section">
 
-            <div class="section-page-header">
-                <span class="section-label">FIND A FRIEND</span>
-                <h1>Adoption ❤️</h1>
-                <p>Give a loving pet a forever home.</p>
-            </div>
+    <!-- HERO SECTION -->
+    <div class="seller-hero">
 
-            <div class="adoption-grid-page">
+        <div class="seller-hero-content">
 
-                <div class="adoption-pet-card">
-                    <img src="images/max.jpg" alt="Max">
-                    <div>
-                        <h3>Max</h3>
-                        <p>Golden Retriever • 1 year • Male</p>
-                        <small>
-                            <i class="fa-solid fa-location-dot"></i>
-                            Kolkata, WB
-                        </small>
-                        <a href="pet-details.jsp" class="view-pet-btn">
-                            View Details
-                        </a>
-                    </div>
-                </div>
+            <span class="seller-label">SELL WITH PETORA</span>
 
-                <div class="adoption-pet-card">
-                    <img src="images/luna.jpg" alt="Luna">
-                    <div>
-                        <h3>Luna</h3>
-                        <p>Indian Cat • 1 year • Female</p>
-                        <small>
-                            <i class="fa-solid fa-location-dot"></i>
-                            Howrah, WB
-                        </small>
-                        <a href="pet-details.jsp" class="view-pet-btn">
-                            View Details
-                        </a>
-                    </div>
-                </div>
+            <h1>
+                Become a <span>Petora Seller</span>
+            </h1>
 
-                <div class="adoption-pet-card">
-                    <img src="images/rocky.jpg" alt="Rocky">
-                    <div>
-                        <h3>Rocky</h3>
-                        <p>Labrador • 2 years • Male</p>
-                        <small>
-                            <i class="fa-solid fa-location-dot"></i>
-                            Kolkata, WB
-                        </small>
-                        <a href="pet-details.jsp" class="view-pet-btn">
-                            View Details
-                        </a>
-                    </div>
-                </div>
+            <h2>Turn Your Love for Pets into a Partnership</h2>
+
+            <p>
+                List your pets, reach genuine pet lovers and find
+                caring, responsible homes with Petora.
+            </p>
+
+            <div class="seller-hero-buttons">
+
+                <a href="seller-login.jsp" class="seller-login-btn">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Login as Seller
+                    <span>→</span>
+                </a>
+
+                <a href="seller-register.jsp" class="seller-register-btn">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Register as Seller
+                    <span>→</span>
+                </a>
 
             </div>
 
-        </section>
+        </div>
+
+        <!-- PET ILLUSTRATION -->
+        <div class="seller-hero-visual">
+
+            <div class="seller-paw paw-one">🐾</div>
+            <div class="seller-paw paw-two">🐾</div>
+
+            <div class="seller-pet-circle">
+                <span class="seller-main-pet">🐶</span>
+                <span class="seller-side-pet">🐱</span>
+                <span class="seller-rabbit">🐰</span>
+            </div>
+
+            <div class="seller-floating-card">
+                <span>💚</span>
+                <div>
+                    <strong>Happy Partnerships</strong>
+                    <small>Connecting pets with loving homes</small>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SELLER BENEFITS -->
+    <div class="seller-benefits-section">
+
+        <div class="seller-section-heading">
+            <span>WHY JOIN US?</span>
+            <h2>Why Become a Seller on <span>Petora?</span></h2>
+            <p>Grow your reach while helping pets find loving homes.</p>
+        </div>
+
+        <div class="seller-benefits-grid">
+
+            <div class="seller-benefit-card benefit-green">
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <div>
+                    <h3>Reach More Pet Lovers</h3>
+                    <p>
+                        Showcase your pets to a large and trusted community.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="seller-benefit-card benefit-blue">
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+
+                <div>
+                    <h3>Manage Your Listings</h3>
+                    <p>
+                        Easily add, update and manage your pet details.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="seller-benefit-card benefit-orange">
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-shield-heart"></i>
+                </div>
+
+                <div>
+                    <h3>Connect with Genuine Buyers</h3>
+                    <p>
+                        Connect with caring people looking for a new companion.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="seller-benefit-card benefit-purple">
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-chart-column"></i>
+                </div>
+
+                <div>
+                    <h3>Track Your Sales</h3>
+                    <p>
+                        Keep track of your listings, inquiries and sales.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- HOW IT WORKS -->
+    <div class="seller-how-section">
+
+        <div class="seller-section-heading">
+            <h2>How It Works?</h2>
+            <p>Start your seller journey in three simple steps.</p>
+        </div>
+
+        <div class="seller-steps">
+
+            <div class="seller-step">
+
+                <span class="step-number">1</span>
+
+                <div class="step-icon">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+
+                <div class="step-content">
+                    <h3>Register as Seller</h3>
+                    <p>
+                        Create your seller account with basic details.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="step-arrow">→</div>
+
+
+            <div class="seller-step">
+
+                <span class="step-number">2</span>
+
+                <div class="step-icon step-blue">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <div class="step-content">
+                    <h3>Get Approved</h3>
+                    <p>
+                        Our team reviews and verifies your application.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="step-arrow">→</div>
+
+
+            <div class="seller-step">
+
+                <span class="step-number">3</span>
+
+                <div class="step-icon">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+
+                <div class="step-content">
+                    <h3>Start Selling</h3>
+                    <p>
+                        List your pets and connect with loving buyers.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 
 
         <!-- =================================================

@@ -20,14 +20,16 @@
 
             <!-- Petora Brand -->
             <div class="admin-brand">
-                <div class="admin-brand-icon">🐾</div>
+                <div class="admin-brand-icon">
+    <img src="images/PetNest_Logo.png" alt="Petora Logo">
+</div>
                 <div class="admin-brand-text">
-                    <h2>Petora</h2>
+                    <h2>PetNest</h2>
                     <p>Pet Management System</p>
                 </div>
             </div>
 
-            <img src="images/auth-pets.jpg"
+            <img src="images/admin_login.png"
                  alt="Puppy and kitten"
                  class="admin-pet-image">
 

@@ -1,0 +1,806 @@
+
+/* ==========================================
+   PETORA - VETERINARIAN LOGIN
+   Complete Responsive Design
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #17243a;
+}
+
+/* ==========================================
+   MAIN PAGE
+========================================== */
+
+.auth-page.doctor-auth-page {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+
+    padding: 115px 5% 35px;
+
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    justify-items: center;
+    gap: 65px;
+
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 12% 15%,
+            #d6eaff 0,
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #f4f9ff,
+            #e9f3ff
+        );
+}
+
+/* Background decorations */
+
+.auth-page.doctor-auth-page::before {
+    content: "";
+    position: absolute;
+
+    width: 330px;
+    height: 220px;
+
+    top: -130px;
+    left: -120px;
+
+    background: #c5e1ff;
+    border-radius: 50%;
+
+    transform: rotate(-35deg);
+    opacity: 0.7;
+
+    pointer-events: none;
+    z-index: -1;
+}
+
+.auth-page.doctor-auth-page::after {
+    content: "";
+    position: absolute;
+
+    width: 380px;
+    height: 250px;
+
+    bottom: -160px;
+    right: -100px;
+
+    background: #c8e2ff;
+    border-radius: 50%;
+
+    transform: rotate(-35deg);
+    opacity: 0.8;
+
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ==========================================
+   LEFT IMAGE SECTION
+========================================== */
+
+.doctor-auth-page .doctor-visual {
+    width: 100%;
+    max-width: 700px;
+
+    height: min(62vh, 480px);
+    min-height: 340px;
+
+    position: relative;
+    margin: 0;
+
+    border: 5px solid #ffffff;
+    border-radius: 29px;
+
+    background: #dceeff;
+
+    box-shadow:
+        0 18px 45px rgba(25, 76, 135, 0.14);
+
+    z-index: 1;
+}
+
+/* Hide old promotional content */
+
+.doctor-auth-page .visual-content,
+.doctor-auth-page .doctor-visual-footer {
+    display: none;
+}
+
+/* Image container */
+
+.doctor-auth-page .pet-image {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+/* Pet image */
+
+.doctor-auth-page .pet-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 24px;
+}
+
+/* ==========================================
+   PETORA LOGO BOX
+   Increased gap above image
+========================================== */
+
+.doctor-auth-page .brand {
+    position: absolute;
+
+    top: -112px;
+    left: 0;
+
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding: 10px 25px 10px 10px;
+
+    background: #ffffff;
+
+    border: 1px solid #dceaff;
+    border-radius: 50px;
+
+    box-shadow:
+        0 7px 22px rgba(22, 70, 125, 0.10);
+}
+
+/* Logo icon */
+
+.doctor-auth-page .brand-icon {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #efa84f;
+    border-radius: 50%;
+
+    font-size: 27px;
+}
+
+.doctor-auth-page .brand-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 5px;
+}
+
+/* Brand name */
+
+.doctor-auth-page .brand h2 {
+    color: #205b3b;
+
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.doctor-auth-page .brand p {
+    color: #68736b;
+
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* ==========================================
+   RIGHT FORM SECTION
+========================================== */
+
+.doctor-auth-page .doctor-form-section {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* ==========================================
+   LOGIN CARD
+========================================== */
+
+.doctor-auth-page .doctor-auth-card {
+    width: 100%;
+    max-width: 540px;
+
+    padding: 25px 36px;
+
+    background: #ffffff;
+
+    border: 1px solid #d5e5f8;
+    border-radius: 27px;
+
+    box-shadow:
+        0 18px 50px rgba(31, 78, 132, 0.10);
+}
+
+/* Doctor icon */
+
+.doctor-auth-page .auth-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 11px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e2efff;
+    border-radius: 19px;
+
+    font-size: 27px;
+}
+
+/* ==========================================
+   LOGIN HEADING
+========================================== */
+
+.doctor-auth-page .auth-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.doctor-auth-page .auth-heading h1 {
+    color: #17243a;
+
+    font-size: 33px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.doctor-auth-page .auth-heading h1 span {
+    color: #1764bd;
+}
+
+.doctor-auth-page .auth-heading p {
+    margin-top: 6px;
+
+    color: #7a8798;
+    font-size: 13px;
+}
+
+/* ==========================================
+   ERROR MESSAGE
+========================================== */
+
+.doctor-auth-page .login-error-message {
+    margin: 0 0 15px;
+    padding: 11px 13px;
+
+    color: #a52222;
+    background: #fff0f0;
+
+    border: 1px solid #f1caca;
+    border-radius: 11px;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* ==========================================
+   INPUT FIELDS
+========================================== */
+
+.doctor-auth-page .input-group {
+    margin-bottom: 14px;
+}
+
+.doctor-auth-page .input-group label {
+    display: block;
+    margin-bottom: 7px;
+
+    color: #26374c;
+    font-size: 13px;
+    font-weight: 650;
+}
+
+.doctor-auth-page .input-wrapper {
+    width: 100%;
+    height: 49px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 0 15px;
+
+    background: #edf5ff;
+
+    border: 1px solid #c9def7;
+    border-radius: 13px;
+
+    transition: 0.25s ease;
+}
+
+.doctor-auth-page .input-wrapper:focus-within {
+    background: #ffffff;
+    border-color: #2879d0;
+
+    box-shadow:
+        0 0 0 3px rgba(40, 121, 208, 0.11);
+}
+
+.doctor-auth-page .input-icon {
+    color: #47729e;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.doctor-auth-page .input-wrapper input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #17243a;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.doctor-auth-page .input-wrapper input::placeholder {
+    color: #91a4ba;
+}
+
+/* Password toggle */
+
+.doctor-auth-page .password-toggle {
+    border: none;
+    outline: none;
+    background: transparent;
+
+    cursor: pointer;
+    font-size: 17px;
+    flex-shrink: 0;
+}
+
+/* ==========================================
+   REMEMBER ME / FORGOT PASSWORD
+========================================== */
+
+.doctor-auth-page .form-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    margin: 4px 0 16px;
+
+    font-size: 13px;
+}
+
+.doctor-auth-page .remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #34465c;
+    cursor: pointer;
+}
+
+.doctor-auth-page .remember input {
+    width: 16px;
+    height: 16px;
+
+    accent-color: #1764bd;
+    cursor: pointer;
+}
+
+.doctor-auth-page .form-options a {
+    color: #1764bd;
+
+    text-decoration: none;
+    font-weight: 650;
+}
+
+.doctor-auth-page .form-options a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   LOGIN BUTTON
+========================================== */
+
+.doctor-auth-page .auth-btn {
+    width: 100%;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    border: none;
+    border-radius: 40px;
+
+    background: #1764bd;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.doctor-auth-page .auth-btn span {
+    font-size: 21px;
+    transition: transform 0.3s ease;
+}
+
+.doctor-auth-page .auth-btn:hover {
+    background: #104d98;
+
+    box-shadow:
+        0 9px 22px rgba(23, 100, 189, 0.22);
+
+    transform: translateY(-2px);
+}
+
+.doctor-auth-page .auth-btn:hover span {
+    transform: translateX(5px);
+}
+
+.doctor-auth-page .auth-btn:active {
+    transform: scale(0.98);
+}
+
+/* ==========================================
+   OR DIVIDER
+========================================== */
+
+.doctor-auth-page .divider {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    margin: 15px 0;
+}
+
+.doctor-auth-page .divider span {
+    height: 1px;
+    flex: 1;
+    background: #dce5ef;
+}
+
+.doctor-auth-page .divider p {
+    color: #718096;
+    font-size: 14px;
+    font-weight: 650;
+}
+
+/* ==========================================
+   DOCTOR REGISTRATION BOX
+========================================== */
+
+.doctor-auth-page .doctor-register-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 13px;
+
+    background: #eaf4ff;
+
+    border: 1px solid #d5e7fb;
+    border-radius: 16px;
+}
+
+.doctor-auth-page .doctor-register-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.doctor-auth-page .doctor-register-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.doctor-auth-page .doctor-register-text h3 {
+    color: #1458a5;
+
+    font-size: 14px;
+    font-weight: 750;
+    margin-bottom: 4px;
+}
+
+.doctor-auth-page .doctor-register-text p {
+    color: #667b94;
+
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.doctor-auth-page .doctor-register-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 10px 13px;
+
+    border: 1px solid #1764bd;
+    border-radius: 13px;
+
+    background: #ffffff;
+    color: #1458a5;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: 0.25s ease;
+}
+
+.doctor-auth-page .doctor-register-btn:hover {
+    background: #1764bd;
+    color: #ffffff;
+}
+
+.doctor-auth-page .doctor-register-btn span {
+    transition: transform 0.25s ease;
+}
+
+.doctor-auth-page .doctor-register-btn:hover span {
+    transform: translateX(4px);
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1000px) {
+
+    .auth-page.doctor-auth-page {
+        gap: 35px;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .doctor-auth-page .doctor-visual {
+        height: 58vh;
+        min-height: 330px;
+    }
+
+    .doctor-auth-page .doctor-auth-card {
+        padding: 23px 25px;
+    }
+
+    .doctor-auth-page .auth-heading h1 {
+        font-size: 29px;
+    }
+
+    .doctor-auth-page .brand {
+        top: -105px;
+    }
+}
+
+/* ==========================================
+   SHORT DESKTOP SCREENS
+========================================== */
+
+@media (min-width: 701px) and (max-height: 750px) {
+
+    .auth-page.doctor-auth-page {
+        padding-top: 115px;
+        padding-bottom: 15px;
+        gap: 35px;
+    }
+
+    .doctor-auth-page .doctor-visual {
+        height: 52vh;
+        min-height: 290px;
+    }
+
+    .doctor-auth-page .doctor-auth-card {
+        padding: 17px 30px;
+    }
+
+    .doctor-auth-page .auth-icon {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 7px;
+    }
+
+    .doctor-auth-page .auth-heading {
+        margin-bottom: 12px;
+    }
+
+    .doctor-auth-page .divider {
+        margin: 9px 0;
+    }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 700px) {
+
+    html,
+    body {
+        height: auto;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .auth-page.doctor-auth-page {
+        width: 100%;
+        min-height: 100vh;
+        min-height: 100svh;
+
+        padding: 125px 16px 35px;
+
+        grid-template-columns: 1fr;
+        gap: 35px;
+
+        overflow: visible;
+    }
+
+    .doctor-auth-page .doctor-visual {
+        width: 100%;
+        max-width: 100%;
+
+        height: 250px;
+        min-height: 250px;
+
+        margin: 0;
+        border-radius: 23px;
+    }
+
+    .doctor-auth-page .pet-image,
+    .doctor-auth-page .pet-image img {
+        border-radius: 18px;
+    }
+
+    .doctor-auth-page .brand {
+        top: -100px;
+        left: 0;
+
+        padding: 8px 16px 8px 8px;
+        gap: 9px;
+    }
+
+    .doctor-auth-page .brand-icon {
+        width: 43px;
+        height: 43px;
+        min-width: 43px;
+        font-size: 21px;
+    }
+
+    .doctor-auth-page .brand h2 {
+        font-size: 21px;
+    }
+
+    .doctor-auth-page .brand p {
+        font-size: 10px;
+    }
+
+    .doctor-auth-page .doctor-form-section {
+        padding: 0;
+    }
+
+    .doctor-auth-page .doctor-auth-card {
+        width: 100%;
+        max-width: 480px;
+
+        padding: 27px 21px;
+        border-radius: 22px;
+    }
+
+    .doctor-auth-page .auth-icon {
+        width: 58px;
+        height: 58px;
+        font-size: 27px;
+    }
+
+    .doctor-auth-page .auth-heading h1 {
+        font-size: 29px;
+    }
+
+    .doctor-auth-page .auth-heading p {
+        font-size: 13px;
+    }
+
+    .doctor-auth-page .input-wrapper {
+        height: 51px;
+    }
+
+    .doctor-auth-page .auth-btn {
+        height: 53px;
+        font-size: 15px;
+    }
+
+    .doctor-auth-page .doctor-register-box {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 13px;
+    }
+
+    .doctor-auth-page .doctor-register-icon {
+        font-size: 26px;
+    }
+
+    .doctor-auth-page .doctor-register-text p {
+        font-size: 11px;
+    }
+
+    .doctor-auth-page .doctor-register-btn {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 380px) {
+
+    .auth-page.doctor-auth-page {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .doctor-auth-page .doctor-auth-card {
+        padding: 23px 16px;
+    }
+
+    .doctor-auth-page .auth-heading h1 {
+        font-size: 26px;
+    }
+
+    .doctor-auth-page .doctor-visual {
+        height: 220px;
+        min-height: 220px;
+    }
+}
