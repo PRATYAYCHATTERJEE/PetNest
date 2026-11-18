@@ -36,6 +36,7 @@ public class MarketplaceListingsServlet extends HttpServlet {
             "INNER JOIN seller_applications sa " +
             "ON sa.id = sl.seller_id " +
             "WHERE UPPER(sa.application_status) = 'APPROVED' " +
+            "AND (sl.listing_type <> 'PET' OR sl.listing_status = 'AVAILABLE') " +
             "ORDER BY sl.id DESC";
 
         StringBuilder pets = new StringBuilder();

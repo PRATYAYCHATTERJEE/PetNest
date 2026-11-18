@@ -965,6 +965,26 @@ async function loadMarketplaceListings() {
            ========================================== */
 
         const petGrid = document.getElementById("buyPetsGrid");
+		
+		if (petGrid && Array.isArray(data.pets)) {
+
+		    const availablePetIds = new Set(
+		        data.pets.map(pet => String(pet.id))
+		    );
+
+		    petGrid.querySelectorAll("[data-seller-listing-id]").forEach(card => {
+
+		        const listingId = card.dataset.sellerListingId;
+
+		        if (!availablePetIds.has(String(listingId))) {
+		            card.remove();
+		        }
+
+		    });
+
+		}
+		
+		
 
         if (petGrid && Array.isArray(data.pets)) {
             data.pets.forEach(pet => {
