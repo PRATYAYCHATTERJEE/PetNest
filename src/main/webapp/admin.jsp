@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PawCare Admin Dashboard</title>
+    <title>PetNest Admin Dashboard</title>
 
     <link rel="stylesheet" href="CSS/admin.css">
     <link rel="stylesheet"
@@ -19,7 +19,7 @@
     <aside class="sidebar" id="sidebar">
         <a href="admin.jsp" class="brand">
             <span class="brand-icon"><i class="fa-solid fa-paw"></i></span>
-            <span>PawCare <b>Admin</b></span>
+            <span>PetNest <b>Admin</b></span>
         </a>
 
         <nav class="sidebar-nav">

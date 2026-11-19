@@ -13,7 +13,8 @@
         content="width=device-width, initial-scale=1.0">
 
     <title>PawCare | Better Pets. Better Life.</title>
-
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- CSS -->
     <link rel="stylesheet"
         href="${pageContext.request.contextPath}/CSS/main.css">
@@ -156,8 +157,8 @@
             <div class="hero-stat">
                 <div class="stat-icon stat-orange">🐾</div>
                 <div class="stat-info">
-                    <strong>500+</strong>
-                    <span>Pets Adopted</span>
+                    <strong>200+</strong>
+                    <span>Pets Selled</span>
                 </div>
             </div>
 
@@ -167,7 +168,7 @@
                 <div class="stat-icon stat-green">♟</div>
                 <div class="stat-info">
                     <strong>100+</strong>
-                    <span>Active Volunteers</span>
+                    <span>Active Doctors</span>
                 </div>
             </div>
 
@@ -176,8 +177,8 @@
             <div class="hero-stat">
                 <div class="stat-icon stat-peach">⌂</div>
                 <div class="stat-info">
-                    <strong>50+</strong>
-                    <span>Partner Shelters</span>
+                    <strong>1500+</strong>
+                    <span>Pet Products Sell</span>
                 </div>
             </div>
 
@@ -275,42 +276,42 @@
             <!-- PET 3 -->
             <a href="pets.jsp" class="discover-card">
                 <div class="discover-image">
-                    <img src="<%=request.getContextPath()%>/images/pebble.jpg" alt="Pebble">
+                    <img src="<%=request.getContextPath()%>/images/index/pebble.jpg" alt="Pebble">
                 </div>
             </a>
 
             <!-- PET 4 -->
             <a href="pets.jsp" class="discover-card">
                 <div class="discover-image">
-                    <img src="<%=request.getContextPath()%>/images/freckle.jpg" alt="Freckle">
+                    <img src="<%=request.getContextPath()%>/images/index/freckle.jpg" alt="Freckle">
                 </div>
             </a>
 
             <!-- PET 5 -->
             <a href="pets.jsp" class="discover-card">
                 <div class="discover-image">
-                    <img src="<%=request.getContextPath()%>/images/brownie.jpg" alt="Brownie">
+                    <img src="<%=request.getContextPath()%>/images/index/brownie.jpg" alt="Brownie">
                 </div>
             </a>
 
             <!-- PET 6 -->
             <a href="pets.jsp" class="discover-card">
                 <div class="discover-image">
-                    <img src="<%=request.getContextPath()%>/images/marley.jpg" alt="Marley">
+                    <img src="<%=request.getContextPath()%>/images/index/marley.jpg" alt="Marley">
                 </div>
             </a>
 
             <!-- PET 7 -->
             <a href="pets.jsp" class="discover-card">
                 <div class="discover-image">
-                    <img src="<%=request.getContextPath()%>/images/archi.jpg" alt="Archi">
+                    <img src="<%=request.getContextPath()%>/images/index/archi.jpg" alt="Archi">
                 </div>
             </a>
 
             <!-- PET 8 -->
             <a href="pets.jsp" class="discover-card">
                 <div class="discover-image">
-                    <img src="<%=request.getContextPath()%>/images/coolio.jpg" alt="Coolio">
+                    <img src="<%=request.getContextPath()%>/images/index/coolio.jpg" alt="Coolio">
                 </div>
             </a>
 
@@ -318,11 +319,7 @@
 
         <!-- FIND MORE FRIENDS -->
         <div class="discover-footer">
-            <a href="pets.jsp">
-                <span class="paw-icon">🐾</span>
-                Find More Friends
-                <span class="discover-arrow">→</span>
-            </a>
+            
         </div>
 
     </div>
@@ -352,19 +349,16 @@
             <div class="service-card grooming-card">
 
                 <div class="service-icon">
-                    <i class="fa-solid fa-scissors"></i>
+                    <i class="fa-solid fa-paw"></i>
                 </div>
 
-                <h3>Pet Grooming</h3>
+                <h3>Pawfect Companions</h3>
 
                 <p>
-                    Keep your furry friend fresh, clean and
-                    looking their absolute best.
+                    Find your perfect furry companion and welcome a new member into your family. Explore adorable pets, discover their details, and bring your new best friend home. 🐾
                 </p>
 
-                <a href="#services" class="service-link">
-                    Explore Service <span>→</span>
-                </a>
+                
 
             </div>
 
@@ -372,19 +366,16 @@
             <div class="service-card teeth-card">
 
                 <div class="service-icon">
-                    <i class="fa-solid fa-tooth"></i>
+                    <i class="fa-solid fa-basket-shopping"></i>
                 </div>
 
-                <h3>Teeth Cleaning</h3>
+                <h3>Shop for Your Furry Friend 🐾</h3>
 
                 <p>
-                    Maintain healthy teeth and fresh breath
-                    with proper dental care.
+                    Discover quality pet food, toys, accessories, and everyday essentials to keep your beloved companions happy, healthy, and comfortable.
                 </p>
 
-                <a href="#services" class="service-link">
-                    Explore Service <span>→</span>
-                </a>
+               
 
             </div>
 
@@ -402,9 +393,7 @@
                     medical care for your beloved pets.
                 </p>
 
-                <a href="#services" class="service-link">
-                    Explore Service <span>→</span>
-                </a>
+              
 
             </div>
 
@@ -441,12 +430,12 @@
 
                 <div class="vet-doctor-image">
                     <div class="vet-image-ring">
-                        <img src="<%=request.getContextPath()%>/images/doctors/emily.jpg"
+                        <img src="<%=request.getContextPath()%>/images/index/aniket.jpg"
                              alt="Dr. Emily Carter">
                     </div>
                 </div>
 
-                <h3>Dr. Emily Carter</h3>
+                <h3>Dr. Aniket Roy</h3>
                 <p>Veterinary Doctor</p>
 
                
@@ -458,12 +447,12 @@
 
                 <div class="vet-doctor-image">
                     <div class="vet-image-ring">
-                        <img src="<%=request.getContextPath()%>/images/doctors/mark.jpg"
+                        <img src="<%=request.getContextPath()%>/images/index/Tanisha.jpg"
                              alt="Mark Burke">
                     </div>
                 </div>
 
-                <h3>Mark Burke</h3>
+                <h3>Tanisha Sen</h3>
                 <p>Veterinary Doctor</p>
 
                
@@ -475,12 +464,12 @@
 
                 <div class="vet-doctor-image">
                     <div class="vet-image-ring">
-                        <img src="<%=request.getContextPath()%>/images/doctors/ronald.jpg"
+                        <img src="<%=request.getContextPath()%>/images/index/Rajesh.jpg"
                              alt="Ronald Frailey">
                     </div>
                 </div>
 
-                <h3>Ronald Frailey</h3>
+                <h3>Rajesh Sorker</h3>
                 <p>Veterinary Doctor</p>
 
                 
@@ -492,12 +481,12 @@
 
                 <div class="vet-doctor-image">
                     <div class="vet-image-ring">
-                        <img src="<%=request.getContextPath()%>/images/doctors/frank.jpg"
+                        <img src="<%=request.getContextPath()%>/images/index/Urmili.jpg"
                              alt="Frank Wells">
                     </div>
                 </div>
 
-                <h3>Frank Wells</h3>
+                <h3>Urmili Maity</h3>
                 <p>Veterinary Doctor</p>
 
                
@@ -506,12 +495,7 @@
 
         </div>
 
-        <!-- View All Button -->
-        <div class="vet-view-all">
-            <a href="doctors.jsp">
-                View All <span>→</span>
-            </a>
-        </div>
+       
 
     </div>
 
@@ -525,7 +509,7 @@
 
         <!-- Pet Image -->
         <div class="sell-pet-image">
-            <img src="<%=request.getContextPath()%>/images/sell-pets.png"
+            <img src="<%=request.getContextPath()%>/images/index/sell-pets.png"
                  alt="Dog and cat">
         </div>
 
@@ -568,7 +552,7 @@
 
         <!-- Pet and Products Image -->
         <div class="buy-products-image">
-            <img src="<%=request.getContextPath()%>/images/buy-products.png"
+            <img src="<%=request.getContextPath()%>/images/index/buy-products.png"
                  alt="Pets and pet products">
         </div>
 
@@ -667,7 +651,7 @@
 
             <div class="about-image-frame">
                 <img
-                    src="<%=request.getContextPath()%>/images/about-pets.jpg"
+                    src="<%=request.getContextPath()%>/images/index/about-pets.jpg"
                     alt="A happy dog and cat together">
             </div>
 
@@ -720,7 +704,7 @@
                     </div>
                     <div>
                         <h3>Our Location</h3>
-                        <p>Your Pet Nest business address</p>
+                        <p>GopalNager , Asansol</p>
                     </div>
                 </div>
 
@@ -730,7 +714,7 @@
                     </div>
                     <div>
                         <h3>Call Us</h3>
-                        <p>Your contact phone number</p>
+                        <p>+ 91 9856124578</p>
                     </div>
                 </div>
 
@@ -740,7 +724,7 @@
                     </div>
                     <div>
                         <h3>Email Us</h3>
-                        <p>support@yourdomain.com</p>
+                        <p>supporPetNest@gmail.com</p>
                     </div>
                 </div>
 
@@ -759,7 +743,7 @@
             <!-- PET IMAGE -->
             <div class="contact-pet-visual">
                 <img
-                    src="<%=request.getContextPath()%>/images/contact-pets.png"
+                    src="<%=request.getContextPath()%>/images/index/contact-pets.png"
                     alt="Happy golden retriever and cat">
 
                 <div class="contact-heart">
