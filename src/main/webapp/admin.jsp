@@ -24,15 +24,10 @@
 
         <nav class="sidebar-nav">
             <button class="nav-item active" data-section="dashboard">
-                <i class="fa-solid fa-house"></i><span>Dashboard</span>
-            </button>
-            <button class="nav-item" data-section="users">
-                <i class="fa-solid fa-users"></i><span>Users</span>
-            </button>
-            <button class="nav-item" data-section="contacts">
-                <i class="fa-solid fa-envelope"></i><span>Contacts</span>
+                <i class="fa-solid fa-house"></i><span>Home</span>
             </button>
             
+         
 <button type="button" class="nav-item" data-section="doctors"
         onclick="loadDoctorApplications()">
     <i class="fa-solid fa-stethoscope"></i>
@@ -44,13 +39,7 @@
                 <i class="fa-solid fa-store"></i><span>Pet Seller Approvals</span>
                 <span class="nav-count orange">5</span>
             </button>
-            <button class="nav-item" data-section="settings">
-                <i class="fa-solid fa-gear"></i><span>Settings</span>
-            </button>
-            <button class="nav-item" data-section="notifications">
-                <i class="fa-solid fa-bell"></i><span>Notifications</span>
-                <span class="notification-dot">3</span>
-            </button>
+           
         </nav>
 
         <div class="sidebar-promo">
@@ -93,310 +82,234 @@
         </header>
 
         <!-- DASHBOARD SECTION -->
-        <section class="content-section active" id="dashboard">
+       
+<!-- =========================================
+     PAWCARE ADMIN - HOME SECTION
+========================================= -->
 
-            <div class="welcome-banner">
-                <div class="welcome-copy">
-                    <span class="eyebrow">ADMINISTRATION</span>
-                    <h1>Welcome back,<br>Administrator! <span>👋</span></h1>
-                    <p>Here's an overview of your PawCare platform.</p>
+<section class="content-section active" id="dashboard">
+
+    <!-- WELCOME HERO -->
+    <div class="admin-home-hero">
+
+        <div class="admin-home-copy">
+
+            <span class="admin-eyebrow">ADMIN PANEL</span>
+
+            <h1>
+                Welcome to
+                <br>
+                PawCare <span>Admin</span>
+                <i class="fa-solid fa-paw"></i>
+            </h1>
+
+            <p>
+                Manage doctor verifications and seller approvals
+                from a single, secure panel.
+            </p>
+
+        </div>
+
+        <div class="admin-home-image">
+
+            <!-- Add your dog and cat banner image here -->
+            <img
+                src="<%=request.getContextPath()%>/images/admin/admin-pets.png"
+                alt="Happy dog and cat"
+            >
+
+        </div>
+
+        <div class="hero-decoration paw-decoration-one">
+            <i class="fa-solid fa-paw"></i>
+        </div>
+
+        <div class="hero-decoration paw-decoration-two">
+            <i class="fa-solid fa-paw"></i>
+        </div>
+
+    </div>
+
+
+    <!-- HOME CONTENT -->
+    <div class="admin-home-content">
+
+        <!-- LEFT COLUMN -->
+        <div class="admin-home-left">
+
+            <!-- ABOUT PAWCARE -->
+            <div class="admin-home-card about-pawcare">
+
+                <div class="home-card-heading">
+                    <i class="fa-solid fa-paw"></i>
+                    <h2>About PawCare</h2>
                 </div>
 
-                <div class="welcome-art">
-                    <div class="art-paw paw-one"><i class="fa-solid fa-paw"></i></div>
-                    <div class="art-pets">🐕 🐈</div>
-                    <div class="art-quote">
-                        <i class="fa-solid fa-heart"></i>
-                        <p>Together for<br>Healthier, Happier Pets.</p>
-                        <span class="quote-line"></span>
+                <div class="about-content">
+
+                    <div class="about-text">
+                        <p>
+                            PawCare is a comprehensive pet management
+                            platform that connects pet owners,
+                            veterinarians, and trusted sellers.
+                        </p>
+
+                        <p>
+                            Our goal is to make pet adoption,
+                            veterinary care, and pet-related
+                            services easier and more accessible.
+                        </p>
                     </div>
-                    <div class="art-paw paw-two"><i class="fa-solid fa-paw"></i></div>
+
+                    <div class="about-image">
+                        <img
+                            src="<%=request.getContextPath()%>/images/admin/pawcare-office.jpg"
+                            alt="PawCare Company"
+                        >
+                    </div>
+
                 </div>
-            </div>
-
-            <!-- STATISTICS -->
-            <div class="stats-grid">
-
-                <article class="stat-card">
-                    <div class="stat-top">
-                        <span class="stat-icon blue"><i class="fa-solid fa-users"></i></span>
-                        <i class="fa-solid fa-arrow-trend-up trend blue-text"></i>
-                    </div>
-                    <h2>1,248</h2>
-                    <div class="stat-label">Total Users</div>
-                    <div class="stat-bottom">
-                        <span>Registered accounts</span>
-                        <b class="positive">↑ 12%</b>
-                    </div>
-                </article>
-
-                <article class="stat-card">
-                    <div class="stat-top">
-                        <span class="stat-icon green"><i class="fa-solid fa-stethoscope"></i></span>
-                        <i class="fa-solid fa-arrow-trend-up trend"></i>
-                    </div>
-                    <h2>24</h2>
-                    <div class="stat-label">Doctor Applications</div>
-                    <div class="stat-bottom">
-                        <span class="pending-text"><i class="fa-regular fa-clock"></i> 8 Pending</span>
-                        <span class="mini-status orange-status">Review</span>
-                    </div>
-                </article>
-
-                <article class="stat-card">
-                    <div class="stat-top">
-                        <span class="stat-icon amber"><i class="fa-solid fa-store"></i></span>
-                        <i class="fa-solid fa-arrow-trend-up trend amber-text"></i>
-                    </div>
-                    <h2>36</h2>
-                    <div class="stat-label">Pet Seller Applications</div>
-                    <div class="stat-bottom">
-                        <span class="pending-text"><i class="fa-regular fa-clock"></i> 5 Pending</span>
-                        <span class="mini-status orange-status">Review</span>
-                    </div>
-                </article>
-
-                <article class="stat-card">
-                    <div class="stat-top">
-                        <span class="stat-icon purple"><i class="fa-solid fa-paw"></i></span>
-                        <i class="fa-solid fa-arrow-trend-up trend"></i>
-                    </div>
-                    <h2>482</h2>
-                    <div class="stat-label">Pets Sold</div>
-                    <div class="stat-bottom">
-                        <span>Completed purchases</span>
-                        <b class="positive">↑ 18%</b>
-                    </div>
-                </article>
-
-                <article class="stat-card">
-                    <div class="stat-top">
-                        <span class="stat-icon pink"><i class="fa-solid fa-envelope"></i></span>
-                        <i class="fa-solid fa-arrow-trend-up trend"></i>
-                    </div>
-                    <h2>29</h2>
-                    <div class="stat-label">Contact Messages</div>
-                    <div class="stat-bottom">
-                        <span>New this week</span>
-                        <b class="positive">↑ 6%</b>
-                    </div>
-                </article>
-
-            </div>
-
-            <!-- ACTIVITY AND APPROVALS -->
-            <div class="dashboard-panels">
-
-                <article class="panel activity-panel">
-                    <div class="panel-header">
-                        <h2><i class="fa-regular fa-clock green-text"></i> Recent Activity</h2>
-                        <button class="text-link" data-section="notifications">View All</button>
-                    </div>
-
-                    <div class="activity-list searchable-list">
-                        <div class="activity-row">
-                            <span class="activity-icon blue"><i class="fa-solid fa-user"></i></span>
-                            <div class="activity-info">
-                                <strong>New user registered</strong>
-                                <small>priya@email.com</small>
-                            </div>
-                            <time>10 minutes ago</time>
-                            <span class="activity-dot green-dot"></span>
-                        </div>
-
-                        <div class="activity-row">
-                            <span class="activity-icon green"><i class="fa-solid fa-stethoscope"></i></span>
-                            <div class="activity-info">
-                                <strong>Doctor application submitted</strong>
-                                <small>Dr. Rahul Mehta</small>
-                            </div>
-                            <time>35 minutes ago</time>
-                            <span class="activity-dot orange-dot"></span>
-                        </div>
-
-                        <div class="activity-row">
-                            <span class="activity-icon amber"><i class="fa-solid fa-store"></i></span>
-                            <div class="activity-info">
-                                <strong>Pet seller application submitted</strong>
-                                <small>Happy Paws Store</small>
-                            </div>
-                            <time>1 hour ago</time>
-                            <span class="activity-dot orange-dot"></span>
-                        </div>
-
-                        <div class="activity-row">
-                            <span class="activity-icon pink"><i class="fa-solid fa-envelope"></i></span>
-                            <div class="activity-info">
-                                <strong>New contact message</strong>
-                                <small>From: ankit@example.com</small>
-                            </div>
-                            <time>2 hours ago</time>
-                            <span class="activity-dot green-dot"></span>
-                        </div>
-
-                        <div class="activity-row">
-                            <span class="activity-icon purple"><i class="fa-solid fa-paw"></i></span>
-                            <div class="activity-info">
-                                <strong>Pet purchased</strong>
-                                <small>Golden Retriever</small>
-                            </div>
-                            <time>3 hours ago</time>
-                            <span class="activity-dot green-dot"></span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="panel approvals-panel">
-                    <div class="panel-header">
-                        <h2><i class="fa-solid fa-hourglass-half amber-text"></i> Pending Approvals</h2>
-                        <button class="text-link" data-section="doctors">View All</button>
-                    </div>
-
-                    <div class="approval-tabs">
-                        <button class="approval-tab active" data-approval="doctor-list">
-                            Doctor Approvals <span>8</span>
-                        </button>
-                        <button class="approval-tab" data-approval="seller-list">
-                            Seller Approvals <span class="seller-count">5</span>
-                        </button>
-                    </div>
-
-                    <div class="approval-list" id="doctor-list">
-                        <div class="approval-row searchable-item">
-                            <span class="doctor-avatar avatar-one">NS</span>
-                            <div class="approval-info">
-                                <strong>Dr. Neha Sharma</strong>
-                                <small>neha.sharma@example.com</small>
-                                <small>General Veterinary Care</small>
-                            </div>
-                            <div class="approval-meta">
-                                <span class="status-pill">Pending</span>
-                                <small>Submitted 1 day ago</small>
-                            </div>
-                            <button class="row-arrow" data-section="doctors" aria-label="View doctor approvals">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
-
-                        <div class="approval-row searchable-item">
-                            <span class="doctor-avatar avatar-two">AP</span>
-                            <div class="approval-info">
-                                <strong>Dr. Arjun Patel</strong>
-                                <small>arjun.patel@example.com</small>
-                                <small>Veterinary Surgery</small>
-                            </div>
-                            <div class="approval-meta">
-                                <span class="status-pill">Pending</span>
-                                <small>Submitted 2 days ago</small>
-                            </div>
-                            <button class="row-arrow" data-section="doctors" aria-label="View doctor approvals">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
-
-                        <div class="approval-row searchable-item">
-                            <span class="doctor-avatar avatar-three">PD</span>
-                            <div class="approval-info">
-                                <strong>Dr. Priya Desai</strong>
-                                <small>priya.desai@example.com</small>
-                                <small>Dermatology</small>
-                            </div>
-                            <div class="approval-meta">
-                                <span class="status-pill">Pending</span>
-                                <small>Submitted 3 days ago</small>
-                            </div>
-                            <button class="row-arrow" data-section="doctors" aria-label="View doctor approvals">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="approval-list hidden" id="seller-list">
-                        <div class="approval-row searchable-item">
-                            <span class="doctor-avatar avatar-one"><i class="fa-solid fa-store"></i></span>
-                            <div class="approval-info">
-                                <strong>Happy Paws Store</strong>
-                                <small>happy@example.com</small>
-                                <small>Pet supplies seller</small>
-                            </div>
-                            <div class="approval-meta">
-                                <span class="status-pill">Pending</span>
-                                <small>Submitted 1 day ago</small>
-                            </div>
-                            <button class="row-arrow" data-section="sellers" aria-label="View seller approvals">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
-
-                        <div class="approval-row searchable-item">
-                            <span class="doctor-avatar avatar-two"><i class="fa-solid fa-store"></i></span>
-                            <div class="approval-info">
-                                <strong>Pet World</strong>
-                                <small>petworld@example.com</small>
-                                <small>Pet supplies seller</small>
-                            </div>
-                            <div class="approval-meta">
-                                <span class="status-pill">Pending</span>
-                                <small>Submitted 2 days ago</small>
-                            </div>
-                            <button class="row-arrow" data-section="sellers" aria-label="View seller approvals">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </article>
 
             </div>
 
-            <!-- QUICK ACTIONS -->
-            <section class="quick-actions">
-                <div class="quick-title">
-                    <i class="fa-solid fa-bolt"></i>
-                    <h2>Quick Actions</h2>
+
+            <!-- COMPANY DETAILS -->
+            <div class="admin-home-card company-details">
+
+                <div class="home-card-heading">
+                    <i class="fa-solid fa-building"></i>
+                    <h2>Company Details</h2>
                 </div>
 
-                <button class="quick-action" data-section="users">
-                    <i class="fa-solid fa-users"></i><span>View All Users</span>
-                    <i class="fa-solid fa-arrow-right action-arrow"></i>
-                </button>
+                <div class="company-details-grid">
 
-                <button class="quick-action" data-section="doctors">
-                    <i class="fa-solid fa-stethoscope"></i><span>Manage Doctors</span>
-                    <i class="fa-solid fa-arrow-right action-arrow"></i>
-                </button>
+                    <!-- LOCATION -->
+                    <div class="company-detail-item">
 
-                <button class="quick-action" data-section="sellers">
-                    <i class="fa-solid fa-store"></i><span>Manage Pet Sellers</span>
-                    <i class="fa-solid fa-arrow-right action-arrow"></i>
-                </button>
+                        <div class="detail-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
 
-                <button class="quick-action" data-section="contacts">
-                    <i class="fa-solid fa-envelope"></i><span>View Contacts</span>
-                    <i class="fa-solid fa-arrow-right action-arrow"></i>
-                </button>
+                        <div>
+                            <strong>Location</strong>
+                            <p>Gopal Danga, Asansol, West Bengal</p>
+                        </div>
 
-                <button class="quick-action" data-section="settings">
-                    <i class="fa-solid fa-gear"></i><span>System Settings</span>
-                    <i class="fa-solid fa-arrow-right action-arrow"></i>
-                </button>
-            </section>
+                    </div>
 
-        </section>
+
+                    <!-- PHONE -->
+                    <div class="company-detail-item">
+
+                        <div class="detail-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div>
+                            <strong>Phone</strong>
+                            <p>Add your company phone number</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+                    <div class="company-detail-item">
+
+                        <div class="detail-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <strong>Email</strong>
+                            <p>Add your company email</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- WEBSITE -->
+                    <div class="company-detail-item">
+
+                        <div class="detail-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+
+                        <div>
+                            <strong>Website</strong>
+                            <p>Add your website address</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT COLUMN - LOCATION MAP -->
+        <div class="admin-home-card location-card">
+
+            <div class="home-card-heading">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h2>Our Location</h2>
+
+            </div>
+
+            <div class="company-map">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6612.386160479411!2d86.98477119046794!3d23.695180239224086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f718d101e3a6bb%3A0x1df6eee26377e04c!2sGopal%20Danga%2C%20Asansol%2C%20West%20Bengal!5e1!3m2!1sen!2sin!4v1795095901035!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+
+            </div>
+
+            <div class="map-location-info">
+
+                <i class="fa-solid fa-map-pin"></i>
+
+                <div>
+                    <strong>PawCare Location</strong>
+                    <p>Gopal Danga, Asansol, West Bengal, India</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BOTTOM BRAND MESSAGE -->
+    <div class="admin-home-footer">
+
+        <i class="fa-solid fa-paw"></i>
+
+        <p>
+            PawCare — Together for Healthier, Happier Pets.
+        </p>
+
+        <i class="fa-solid fa-heart"></i>
+
+    </div>
+
+</section>
+
+<!-- END ADMIN HOME SECTION -->
+
 
         <!-- PLACEHOLDER SECTIONS -->
-        <section class="content-section placeholder-section" id="users">
-            <span class="eyebrow">ADMINISTRATION</span>
-            <h1>Users</h1>
-            <p>Manage PawCare user accounts here.</p>
-            <div class="placeholder-card"><i class="fa-solid fa-users"></i><h2>User Management</h2><p>Database integration will be added next.</p></div>
-        </section>
-
-        <section class="content-section placeholder-section" id="contacts">
-            <span class="eyebrow">COMMUNICATION</span>
-            <h1>Contact Messages</h1>
-            <p>Review messages sent by PawCare users.</p>
-            <div class="placeholder-card"><i class="fa-solid fa-envelope"></i><h2>Contact Management</h2><p>Message retrieval and replies will be added later.</p></div>
-        </section>
+       
 
         
 
@@ -530,24 +443,121 @@
 </section>
 
 
-        <section class="content-section placeholder-section" id="settings">
-            <span class="eyebrow">CONFIGURATION</span>
-            <h1>Settings</h1>
-            <p>Manage your administrator preferences.</p>
-            <div class="placeholder-card"><i class="fa-solid fa-gear"></i><h2>System Settings</h2><p>Configuration options will be added later.</p></div>
-        </section>
-
-        <section class="content-section placeholder-section" id="notifications">
-            <span class="eyebrow">UPDATES</span>
-            <h1>Notifications</h1>
-            <p>Keep track of recent activity across PawCare.</p>
-            <div class="placeholder-card"><i class="fa-solid fa-bell"></i><h2>All Notifications</h2><p>Live notifications will be connected later.</p></div>
-        </section>
+       
 
     </main>
 </div>
 
 <div class="mobile-overlay" id="mobileOverlay"></div>
+
+
+<!-- =====================================
+     DOCTOR CERTIFICATE POPUP
+===================================== -->
+
+<div class="certificate-modal" id="certificateModal">
+
+    <div class="certificate-modal-box">
+
+        <!-- HEADER -->
+        <div class="certificate-modal-header">
+
+            <div class="certificate-header-icon">
+                <i class="fa-solid fa-file-circle-check"></i>
+            </div>
+
+            <button type="button"
+                    class="certificate-close"
+                    onclick="closeCertificateModal()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <!-- TITLE -->
+        <div class="certificate-modal-title">
+
+            <h2>Doctor Certificates</h2>
+
+            <p>
+                Select the document you want to review.
+            </p>
+
+        </div>
+
+        <!-- REGISTRATION CERTIFICATE -->
+        <div class="certificate-option">
+
+            <div class="certificate-option-icon">
+                <i class="fa-solid fa-file-lines"></i>
+            </div>
+
+            <div class="certificate-option-info">
+                <h3>Registration Certificate</h3>
+                <p>Professional registration document</p>
+            </div>
+
+            <span class="certificate-number">01</span>
+
+        </div>
+
+        <button type="button"
+                class="certificate-open-btn"
+                onclick="openDoctorCertificate('registration')">
+
+            <i class="fa-solid fa-eye"></i>
+            View Registration Certificate
+
+        </button>
+
+
+        <!-- DEGREE CERTIFICATE -->
+        <div class="certificate-option">
+
+            <div class="certificate-option-icon degree-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div class="certificate-option-info">
+                <h3>Degree Certificate</h3>
+                <p>Educational qualification document</p>
+            </div>
+
+            <span class="certificate-number">02</span>
+
+        </div>
+
+        <button type="button"
+                class="certificate-open-btn"
+                onclick="openDoctorCertificate('degree')">
+
+            <i class="fa-solid fa-eye"></i>
+            View Degree Certificate
+
+        </button>
+
+
+        <!-- CANCEL -->
+        <button type="button"
+                class="certificate-cancel-btn"
+                onclick="closeCertificateModal()">
+
+            Cancel
+
+        </button>
+
+        <div class="certificate-footer">
+            <i class="fa-solid fa-shield-halved"></i>
+            PawCare Secure Document Viewer
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
 
 <script src="Js/admin.js"></script>
 </body>

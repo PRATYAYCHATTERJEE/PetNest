@@ -262,29 +262,65 @@ async function loadDoctorApplications() {
 
 
 
+
+let registrationCertificateUrl = "";
+let degreeCertificateUrl = "";
+
 function viewDoctorApplication(doctorId) {
+
     const basePath = window.location.pathname.substring(
         0,
         window.location.pathname.lastIndexOf("/")
     );
 
-    const registrationUrl =
+    registrationCertificateUrl =
         basePath + "/DoctorCertificateServlet?id=" +
         encodeURIComponent(doctorId) + "&type=registration";
 
-    const degreeUrl =
+    degreeCertificateUrl =
         basePath + "/DoctorCertificateServlet?id=" +
         encodeURIComponent(doctorId) + "&type=degree";
 
-    const choice = confirm(
-        "OK = View Registration Certificate\n" +
-        "Cancel = View Degree Certificate"
-    );
+    document.getElementById("certificateModal").classList.add("active");
 
-    const url = choice ? registrationUrl : degreeUrl;
-
-    window.open(url, "_blank", "noopener,noreferrer");
 }
+
+function openDoctorCertificate(type) {
+
+    const url = type === "registration"
+        ? registrationCertificateUrl
+        : degreeCertificateUrl;
+
+    if (url) {
+        window.open(url, "_blank", "noopener,noreferrer");
+    }
+
+    closeCertificateModal();
+}
+
+function closeCertificateModal() {
+    document.getElementById("certificateModal").classList.remove("active");
+}
+
+// Close when clicking outside the popup
+document.addEventListener("click", function(event) {
+
+    const modal = document.getElementById("certificateModal");
+
+    if (event.target === modal) {
+        closeCertificateModal();
+    }
+
+});
+
+// Close with Escape key
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+        closeCertificateModal();
+    }
+
+});
 
 
 async function reviewDoctorApplication(doctorId, decision) {
