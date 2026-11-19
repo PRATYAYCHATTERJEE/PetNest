@@ -322,205 +322,83 @@
 
 
             <!-- MIDDLE -->
-            <div class="middle-grid">
+            
+<!-- INFORMATION CARDS -->
+<section class="info-cards-section">
 
-                <!-- APPOINTMENT -->
-                <div class="dashboard-card appointment-card">
+    <div class="info-section-heading">
+        <span>WHY PETORA?</span>
+        <h2>Everything for a Happier Pet Life</h2>
+        <p>Making pet care simpler, safer and better for everyone.</p>
+    </div>
 
-                    <div class="card-header">
-                        <div>
-                            <span class="card-icon orange-icon">
-                                <i class="fa-regular fa-calendar-check"></i>
-                            </span>
-                            <h2>Upcoming Appointment</h2>
-                        </div>
+    <div class="info-cards-grid">
 
-                        <a href="#"
-                           onclick="showSection('veterinary', null); return false;">
-                            View All →
-                        </a>
-                    </div>
-
-                    <div class="appointment-body">
-
-                        <img src="images/bruno.jpg" alt="Bruno">
-
-                        <div class="appointment-info">
-                            <h3>Bruno</h3>
-
-                            <p>
-                                <i class="fa-solid fa-location-dot"></i>
-                                General Checkup
-                            </p>
-
-                            <div class="appointment-meta">
-                                <span>
-                                    <i class="fa-regular fa-calendar"></i>
-                                    02 Oct 2026
-                                </span>
-
-                                <span>
-                                    <i class="fa-regular fa-clock"></i>
-                                    10:30 AM
-                                </span>
-                            </div>
-
-                            <p>
-                                <i class="fa-solid fa-location-dot"></i>
-                                PawCare Veterinary Clinic
-                            </p>
-                        </div>
-
-                        <span class="status confirmed">
-                            Confirmed
-                        </span>
-
-                    </div>
-
-                    <div class="appointment-actions">
-                        <button class="secondary-btn"
-                                onclick="showSection('veterinary', null)">
-                            Reschedule
-                        </button>
-
-                        <button class="primary-btn"
-                                onclick="showSection('veterinary', null)">
-                            View Details
-                        </button>
-                    </div>
-
-                </div>
-
-
-                <!-- MY PETS -->
-                <div class="dashboard-card pets-card">
-
-                    <div class="card-header">
-                        <div>
-                            <span class="card-icon green-icon">
-                                <i class="fa-solid fa-paw"></i>
-                            </span>
-                            <h2>My Pets</h2>
-                        </div>
-
-                        <a href="#"
-                           onclick="showSection('myPets', null); return false;">
-                            View All →
-                        </a>
-                    </div>
-
-                    <div class="pet-list">
-
-                        <div class="pet-row">
-                            <img src="images/bruno.jpg" alt="Bruno">
-
-                            <div>
-                                <h3>Bruno</h3>
-                                <p>Golden Retriever</p>
-                                <small>2 years • Male</small>
-                            </div>
-
-                            <span class="healthy">Healthy</span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-
-                        <div class="pet-row">
-                            <img src="images/luna.jpg" alt="Luna">
-
-                            <div>
-                                <h3>Luna</h3>
-                                <p>Indian Cat</p>
-                                <small>1 year • Female</small>
-                            </div>
-
-                            <span class="healthy">Healthy</span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PROFILE -->
-                <div class="dashboard-card profile-card">
-
-                    <div class="profile-header">
-
-                        <div class="profile-avatar">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
-
-                        <div>
-                            <h3><%= userName %></h3>
-                            <p>pratyay@example.com</p>
-                        </div>
-
-                        <button class="edit-btn"
-                                onclick="showSection('settings', null)">
-                            <i class="fa-solid fa-pen"></i>
-                        </button>
-
-                    </div>
-
-                    <div class="profile-details">
-
-                        <div>
-                            <i class="fa-solid fa-paw"></i>
-                            <span>
-                                <small>Member Since</small>
-                                <strong>Sep 2026</strong>
-                            </span>
-                        </div>
-
-                        <div>
-                            <i class="fa-solid fa-star"></i>
-                            <span>
-                                <small>Pets Adopted</small>
-                                <strong>2</strong>
-                            </span>
-                        </div>
-
-                        <div>
-                            <i class="fa-solid fa-heart"></i>
-                            <span>
-                                <small>Total Contributions</small>
-                                <strong>5</strong>
-                            </span>
-                        </div>
-
-                    </div>
-
-                </div>
-
+        <!-- CARD 1 -->
+        <div class="info-card">
+            <div class="info-card-icon green">
+                <i class="fa-solid fa-shield-heart"></i>
             </div>
+            <h3>Safe & Secure</h3>
+            <p>
+                A trusted platform designed to make pet adoption,
+                shopping and care safer and more reliable.
+            </p>
+            <span class="info-card-tag">Your Trust Matters</span>
+        </div>
 
-
-            <!-- SIMPLE ADOPTION BANNER -->
-            <div class="adoption-banner">
-
-                <div class="banner-text">
-                    <span>NOT JUST PETS,</span>
-
-                    <h2>They're Family</h2>
-
-                    <p>
-                        Give love. Get unconditional love.
-                    </p>
-
-                    <button class="primary-btn"
-                            onclick="showSection('adoption', null)">
-                        Adopt Now
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
-
-                <div class="banner-decoration">
-                    <span>♥</span>
-                    <span>🐾</span>
-                </div>
-
+        <!-- CARD 2 -->
+        <div class="info-card">
+            <div class="info-card-icon orange">
+                <i class="fa-solid fa-bolt"></i>
             </div>
+            <h3>Fast & Easy</h3>
+            <p>
+                Explore pets, discover products and access
+                essential services through one simple platform.
+            </p>
+            <span class="info-card-tag">Simple Experience</span>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="info-card">
+            <div class="info-card-icon purple">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3>24/7 Support</h3>
+            <p>
+                Get assistance whenever you need help navigating
+                your pet care journey.
+            </p>
+            <span class="info-card-tag">We're Here to Help</span>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="info-card">
+            <div class="info-card-icon pink">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+            <h3>Useful Resources</h3>
+            <p>
+                Discover helpful information about pet health,
+                nutrition, grooming and responsible ownership.
+            </p>
+            <span class="info-card-tag">Learn & Care</span>
+        </div>
+
+    </div>
+
+    <div class="info-bottom-banner">
+        <div>
+            <span>PAWS, LOVE & HAPPINESS</span>
+            <h2>Every Pet Deserves a Better Tomorrow.</h2>
+            <p>Small acts of care make a lifetime of difference.</p>
+        </div>
+        <i class="fa-solid fa-paw"></i>
+    </div>
+
+</section>
+
 
         </section>
 
@@ -1119,7 +997,7 @@
                              data-category="food" data-pet="dogs"
                              data-name="Royal Canin Puppy Food" data-price="899">
                         <div class="store-product-image">
-                            <img src="images/royal-canin.jpg" alt="Puppy food"
+                            <img src="images/products/royal-canin.jpg" alt="Puppy food"
                                  onerror="this.style.display='none'">
                             <span class="store-badge">Bestseller</span>
                             <button class="store-wishlist" onclick="toggleWishlist(this)"
@@ -1143,7 +1021,7 @@
                              data-category="food" data-pet="dogs"
                              data-name="Pedigree Adult Dog Food" data-price="749">
                         <div class="store-product-image">
-                            <img src="images/pedigree.jpg" alt="Adult dog food"
+                            <img src="images/products/pedigree.jpg" alt="Adult dog food"
                                  onerror="this.style.display='none'">
                             <span class="store-badge popular">Popular</span>
                             <button class="store-wishlist" onclick="toggleWishlist(this)"
@@ -1167,7 +1045,7 @@
                              data-category="food" data-pet="cats"
                              data-name="Whiskas Cat Food" data-price="499">
                         <div class="store-product-image">
-                            <img src="images/whiskas.jpg" alt="Cat food"
+                            <img src="images/products/whiskas.jpg" alt="Cat food"
                                  onerror="this.style.display='none'">
                             <span class="store-badge new">Popular</span>
                             <button class="store-wishlist" onclick="toggleWishlist(this)"
@@ -1191,7 +1069,7 @@
                              data-category="food" data-pet="cats"
                              data-name="Sheba Wet Cat Food" data-price="699">
                         <div class="store-product-image">
-                            <img src="images/sheba.jpg" alt="Wet cat food"
+                            <img src="images/products/sheba.jpg" alt="Wet cat food"
                                  onerror="this.style.display='none'">
                             <button class="store-wishlist" onclick="toggleWishlist(this)"
                                     aria-label="Add to wishlist">

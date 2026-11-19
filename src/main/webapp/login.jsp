@@ -1,160 +1,69 @@
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petora | Login</title>
-
     <link rel="stylesheet" href="CSS/auth.css">
-
 </head>
-
 
 <body>
 
 <div class="auth-page">
 
-
-    <!-- ================= LEFT SIDE ================= -->
-
+    <!-- LEFT SIDE -->
     <section class="auth-visual">
 
+        <!-- BRAND -->
         <div class="brand">
-
-            <div class="brand-icon">
-                🐾
-            </div>
-
-            <div>
+            <div class="brand-icon">🐾</div>
+            <div class="brand-text">
                 <h2>Petora</h2>
                 <p>Pet Management System</p>
             </div>
-
         </div>
 
-
-        <div class="visual-content">
-
-            <span class="small-heading">
-                ADOPT • CARE • LOVE
-            </span>
-
-            <h1>
-                A Better World
-                <br>
-                for <span>Every Pet</span>
-            </h1>
-
-            <p>
-                Adopt, care, and give a second chance.
-                Because every pet deserves a loving home.
-            </p>
-
-        </div>
-
-
+        <!-- PET ILLUSTRATION -->
         <div class="pet-image">
-
-            <img src="images/auth-pets.jpg"
-                 alt="Happy pets">
-
-        </div>
-
-
-        <div class="visual-features">
-
-            <div class="feature">
-
-                <span class="feature-icon">♥</span>
-
-                <span>Adoption</span>
-
-            </div>
-
-
-            <div class="feature">
-
-                <span class="feature-icon">🛡</span>
-
-                <span>Care</span>
-
-            </div>
-
-
-            <div class="feature">
-
-                <span class="feature-icon">👥</span>
-
-                <span>Community</span>
-
-            </div>
-
+            <img src="images/auth-pets.jpg" alt="Petora pet care illustration">
         </div>
 
     </section>
 
 
-
-    <!-- ================= RIGHT SIDE ================= -->
-
+    <!-- RIGHT SIDE -->
     <section class="auth-form-section">
-
 
         <div class="auth-card">
 
-
-            <!-- Small illustration -->
-
+            <!-- FLOATING PAW ICON -->
             <div class="auth-icon">
-
-                🐶 🐱
-
+                🐾
             </div>
 
-
+            <!-- HEADING -->
             <div class="auth-heading">
-
-                <h1>
-                    Welcome <span>Back</span>
-                </h1>
-
-                <p>
-                    Login to continue your journey with Petora
-                </p>
-
+                <h1>Welcome <span>Back</span></h1>
+                <p>Login to continue your journey with Petora</p>
             </div>
-
 
 
             <!-- LOGIN FORM -->
-
             <form id="loginForm"
                   action="LoginServlet"
                   method="post">
 
-
-                <!-- Email -->
-
+                <!-- EMAIL -->
                 <div class="input-group">
-
                     <label for="email">
+                        <span class="field-icon">✉</span>
                         Email Address
                     </label>
 
                     <div class="input-wrapper">
-
-                        <span class="input-icon">
-                            ✉
-                        </span>
-
                         <input
                             type="email"
                             id="email"
@@ -162,27 +71,18 @@
                             placeholder="Enter your email"
                             autocomplete="email"
                             required>
-
                     </div>
-
                 </div>
 
 
-
-                <!-- Password -->
-
+                <!-- PASSWORD -->
                 <div class="input-group">
-
                     <label for="password">
+                        <span class="field-icon">🔒</span>
                         Password
                     </label>
 
                     <div class="input-wrapper">
-
-                        <span class="input-icon">
-                            🔒
-                        </span>
-
                         <input
                             type="password"
                             id="password"
@@ -195,33 +95,19 @@
                             type="button"
                             class="password-toggle"
                             onclick="togglePassword('password', this)">
-
                             👁
-
                         </button>
-
                     </div>
-
                 </div>
 
 
-
-                <!-- Remember / Forgot -->
-
+                <!-- REMEMBER AND FORGOT -->
                 <div class="form-options">
 
                     <label class="remember">
-
-                        <input
-                            type="checkbox"
-                            name="remember">
-
-                        <span>
-                            Remember me
-                        </span>
-
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
                     </label>
-
 
                     <a href="forgot-password.jsp">
                         Forgot Password?
@@ -230,73 +116,52 @@
                 </div>
 
 
-
-                <!-- Login button -->
-
-                <button
-                    type="submit"
-                    class="auth-btn">
-
+                <!-- LOGIN BUTTON -->
+                <button type="submit" class="auth-btn">
                     Login
                     <span>→</span>
-
                 </button>
-
 
             </form>
 
 
-
-            <!-- Divider -->
-
-           
-<!-- Divider -->
-<div class="divider">
-    <span></span>
-    <p>Other Login Options</p>
-    <span></span>
-</div>
-
-<!-- Doctor and Admin Login -->
-<div class="social-login">
-
-    <a href="Doclogin.jsp" class="social-btn role-login-btn">
-        <span class="role-icon">🩺</span>
-        Login as Doctor
-        <span class="role-arrow">→</span>
-    </a>
-
-    <a href="admin-login.jsp" class="social-btn role-login-btn">
-        <span class="role-icon">🛡️</span>
-        Login as Admin
-        <span class="role-arrow">→</span>
-    </a>
-    
-    <a href="seller-login.jsp" class="social-btn role-login-btn">
-        <span class="role-icon">🤝</span>
-        Login as Seller
-        <span class="role-arrow">→</span>
-    </a>
-
-</div>
+            <!-- DIVIDER -->
+            <div class="divider">
+                <span></span>
+                <p>🐾 Other Login Options 🐾</p>
+                <span></span>
+            </div>
 
 
+            <!-- DOCTOR AND SELLER -->
+            <div class="social-login">
 
+                <a href="Doclogin.jsp"
+                   class="social-btn">
 
-            <!-- Register -->
+                    <span class="role-icon">🩺</span>
+                    <span>Login as Doctor</span>
 
-            <div class="switch-auth">
+                </a>
 
-                <p>
-                    Don't have an account?
+                <a href="seller-login.jsp"
+                   class="social-btn">
 
-                    <a href="register.jsp">
-                        Register Now
-                    </a>
-                </p>
+                    <span class="role-icon">🤝</span>
+                    <span>Login as Seller</span>
+
+                </a>
 
             </div>
 
+
+            <!-- REGISTER -->
+            <div class="switch-auth">
+                <p>
+                    Don't have an account?
+                    <a href="register.jsp">Register Now</a>
+                </p>
+            </div>
 
         </div>
 
@@ -304,9 +169,7 @@
 
 </div>
 
-
 <script src="js/auth.js"></script>
 
 </body>
-
 </html>
