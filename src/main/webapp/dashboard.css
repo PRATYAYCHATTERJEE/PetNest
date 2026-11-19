@@ -3904,6 +3904,110 @@ body {
 
 
 
+/* PURCHASE SUCCESS POPUP */
+
+.purchase-success-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(15, 35, 23, 0.58);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.purchase-success-box {
+    width: 100%;
+    max-width: 430px;
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 38px 30px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    animation: purchasePopupIn 0.4s ease;
+}
+
+.success-check {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background: #e5f5e9;
+    color: #168447;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    margin: 0 auto 20px;
+    animation: successPulse 1.5s ease infinite;
+}
+
+.purchase-success-box h2 {
+    color: #153c29;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.purchase-success-box p {
+    color: #718078;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.purchase-success-box .success-pet-name {
+    color: #168447;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.purchase-success-box button {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 15px;
+    background: #168447;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.purchase-success-box button:hover {
+    background: #096b35;
+    transform: translateY(-2px);
+}
+
+.purchase-success-box button i {
+    margin-left: 8px;
+}
+
+.success-paw {
+    margin-top: 22px;
+    color: #cde7d2;
+    font-size: 25px;
+}
+
+@keyframes purchasePopupIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes successPulse {
+    50% {
+        transform: scale(1.08);
+    }
+}
+
 
 
 

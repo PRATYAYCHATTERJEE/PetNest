@@ -244,6 +244,7 @@
 
 <!-- ================= FEATURED PETS ================= -->
 
+
 <section class="discover-pets" id="pets">
 
     <div class="discover-container">
@@ -260,36 +261,14 @@
             <!-- PET 1 -->
             <a href="pets.jsp" class="discover-card">
                 <div class="discover-image">
-                    <img src="<%=request.getContextPath()%>/images/june.jpg" alt="June">
-                </div>
-                <div class="discover-info">
-                    <div class="discover-name">
-                        <strong>June</strong>
-                        <span>🐱 Cat</span>
-                    </div>
-                    <div class="discover-tags">
-                        <span>♀ Female</span>
-                        <span>1 year</span>
-                        <span>3 kg</span>
-                    </div>
+                    <img src="<%=request.getContextPath()%>/images/index/june.jpg" alt="June">
                 </div>
             </a>
 
             <!-- PET 2 -->
             <a href="pets.jsp" class="discover-card">
                 <div class="discover-image">
-                    <img src="<%=request.getContextPath()%>/images/quackers.jpg" alt="Quackers">
-                </div>
-                <div class="discover-info">
-                    <div class="discover-name">
-                        <strong>Quackers</strong>
-                        <span>🐕 Dog</span>
-                    </div>
-                    <div class="discover-tags">
-                        <span>♂ Male</span>
-                        <span>2 years</span>
-                        <span>5 kg</span>
-                    </div>
+                    <img src="<%=request.getContextPath()%>/images/index/quackers.jpg" alt="Quackers">
                 </div>
             </a>
 
@@ -298,34 +277,12 @@
                 <div class="discover-image">
                     <img src="<%=request.getContextPath()%>/images/pebble.jpg" alt="Pebble">
                 </div>
-                <div class="discover-info">
-                    <div class="discover-name">
-                        <strong>Pebble</strong>
-                        <span>🐕 Dog</span>
-                    </div>
-                    <div class="discover-tags">
-                        <span>♀ Female</span>
-                        <span>1 year</span>
-                        <span>1.5 kg</span>
-                    </div>
-                </div>
             </a>
 
             <!-- PET 4 -->
             <a href="pets.jsp" class="discover-card">
                 <div class="discover-image">
                     <img src="<%=request.getContextPath()%>/images/freckle.jpg" alt="Freckle">
-                </div>
-                <div class="discover-info">
-                    <div class="discover-name">
-                        <strong>Freckle</strong>
-                        <span>🐕 Dog</span>
-                    </div>
-                    <div class="discover-tags">
-                        <span>♂ Male</span>
-                        <span>3 years</span>
-                        <span>15 kg</span>
-                    </div>
                 </div>
             </a>
 
@@ -334,34 +291,12 @@
                 <div class="discover-image">
                     <img src="<%=request.getContextPath()%>/images/brownie.jpg" alt="Brownie">
                 </div>
-                <div class="discover-info">
-                    <div class="discover-name">
-                        <strong>Brownie</strong>
-                        <span>🐕 Dog</span>
-                    </div>
-                    <div class="discover-tags">
-                        <span>♂ Male</span>
-                        <span>5 years</span>
-                        <span>11 kg</span>
-                    </div>
-                </div>
             </a>
 
             <!-- PET 6 -->
             <a href="pets.jsp" class="discover-card">
                 <div class="discover-image">
                     <img src="<%=request.getContextPath()%>/images/marley.jpg" alt="Marley">
-                </div>
-                <div class="discover-info">
-                    <div class="discover-name">
-                        <strong>Marley</strong>
-                        <span>🐕 Dog</span>
-                    </div>
-                    <div class="discover-tags">
-                        <span>♀ Female</span>
-                        <span>5 years</span>
-                        <span>15 kg</span>
-                    </div>
                 </div>
             </a>
 
@@ -370,34 +305,12 @@
                 <div class="discover-image">
                     <img src="<%=request.getContextPath()%>/images/archi.jpg" alt="Archi">
                 </div>
-                <div class="discover-info">
-                    <div class="discover-name">
-                        <strong>Archi</strong>
-                        <span>🐱 Cat</span>
-                    </div>
-                    <div class="discover-tags">
-                        <span>♂ Male</span>
-                        <span>4 years</span>
-                        <span>4 kg</span>
-                    </div>
-                </div>
             </a>
 
             <!-- PET 8 -->
             <a href="pets.jsp" class="discover-card">
                 <div class="discover-image">
                     <img src="<%=request.getContextPath()%>/images/coolio.jpg" alt="Coolio">
-                </div>
-                <div class="discover-info">
-                    <div class="discover-name">
-                        <strong>Coolio</strong>
-                        <span>🐕 Dog</span>
-                    </div>
-                    <div class="discover-tags">
-                        <span>♂ Male</span>
-                        <span>8 years</span>
-                        <span>19 kg</span>
-                    </div>
                 </div>
             </a>
 
@@ -415,8 +328,6 @@
     </div>
 
 </section>
-
-
 
 
 <!-- OUR SERVICES SECTION -->

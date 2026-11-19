@@ -1,6 +1,7 @@
 
 /* =========================================
-   PET NEST - DISCOVER YOUR NEW BEST FRIEND
+   PETORA - DISCOVER YOUR NEW BEST FRIEND
+   IMAGE ONLY DESIGN
 ========================================= */
 
 .discover-pets {
@@ -59,13 +60,14 @@
     gap: 13px;
 }
 
-/* CARD */
+/* IMAGE CARD */
 
 .discover-card {
     position: relative;
     display: block;
+    width: 100%;
     min-width: 0;
-    height: 122px;
+    height: 180px;
     overflow: hidden;
     border-radius: 13px;
     background: #d9d5c7;
@@ -101,65 +103,12 @@
     transform: scale(1.06);
 }
 
-/* INFORMATION PANEL */
+/* HIDE OLD INFORMATION PANEL */
 
-.discover-info {
-    position: absolute;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    padding: 7px 8px 6px;
-    border-radius: 9px;
-    background: rgba(250, 248, 239, 0.96);
-    color: #173d34;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.13);
-}
-
-/* NAME */
-
-.discover-name {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 6px;
-}
-
-.discover-name strong {
-    overflow: hidden;
-    color: #183d33;
-    font-size: 10px;
-    font-weight: 700;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.discover-name span {
-    color: #4a6257;
-    font-size: 8px;
-    white-space: nowrap;
-}
-
-/* TAGS */
-
+.discover-info,
+.discover-name,
 .discover-tags {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 4px;
-}
-
-.discover-tags span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 0;
-    padding: 3px 2px;
-    border: 1px solid #cbd5c9;
-    border-radius: 20px;
-    color: #3c5148;
-    font-size: 7px;
-    font-weight: 600;
-    white-space: nowrap;
+    display: none !important;
 }
 
 /* FOOTER */
@@ -202,6 +151,7 @@
 /* TABLET */
 
 @media (max-width: 850px) {
+
     .discover-pets {
         padding: 28px 3%;
     }
@@ -216,25 +166,14 @@
     }
 
     .discover-card {
-        height: 150px;
-    }
-
-    .discover-name strong {
-        font-size: 12px;
-    }
-
-    .discover-name span {
-        font-size: 10px;
-    }
-
-    .discover-tags span {
-        font-size: 9px;
+        height: 180px;
     }
 }
 
 /* MOBILE */
 
 @media (max-width: 480px) {
+
     .discover-pets {
         padding: 20px 12px;
     }
@@ -259,34 +198,6 @@
     .discover-card {
         height: 125px;
         border-radius: 10px;
-    }
-
-    .discover-info {
-        left: 4px;
-        right: 4px;
-        bottom: 4px;
-        padding: 6px 5px;
-    }
-
-    .discover-name {
-        margin-bottom: 5px;
-    }
-
-    .discover-name strong {
-        font-size: 10px;
-    }
-
-    .discover-name span {
-        font-size: 8px;
-    }
-
-    .discover-tags {
-        gap: 2px;
-    }
-
-    .discover-tags span {
-        font-size: 7px;
-        padding: 3px 1px;
     }
 
     .discover-footer {

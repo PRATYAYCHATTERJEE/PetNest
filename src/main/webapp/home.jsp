@@ -1465,7 +1465,7 @@
              SETTINGS
         ================================================== -->
 
-        <section id="settings" class="page-section">
+         <section id="settings" class="page-section">
 
             <div class="section-page-header">
                 <span class="section-label">ACCOUNT</span>
@@ -1511,7 +1511,6 @@
             </div>
 
         </section>
-
     </main>
 
 <div id="logoutPopup" class="logout-popup">
@@ -1529,6 +1528,71 @@
         </div>
     </div>
 </div>
+
+
+<%
+    String purchasedPetName =
+        (String) session.getAttribute("purchasedPetName");
+
+    boolean purchaseSuccess =
+        Boolean.TRUE.equals(session.getAttribute("purchaseSuccess"));
+
+    // Remove the message after reading it so it appears only once
+    session.removeAttribute("purchaseSuccess");
+    session.removeAttribute("purchasedPetName");
+%>
+
+<!-- PURCHASE SUCCESS POPUP -->
+<div id="purchaseSuccessModal"
+     class="purchase-success-overlay"
+     style="display: <%= purchaseSuccess ? "flex" : "none" %>;">
+
+    <div class="purchase-success-box">
+
+        <!-- Success Icon -->
+        <div class="success-check">
+            <i class="fa-solid fa-check"></i>
+        </div>
+
+        <!-- Heading -->
+        <h2>Purchase Successful!</h2>
+
+        <!-- Pet Name -->
+        <p class="success-pet-name">
+            <%= purchasedPetName != null
+                ? "Congratulations! " + purchasedPetName + " is now yours! 🐾"
+                : "Your new pet is now part of your family! 🐾" %>
+        </p>
+
+        <p class="success-description">
+            Your pet has been successfully purchased
+            and added to your My Pets section.
+        </p>
+
+        <!-- Dashboard Button -->
+        <button type="button" onclick="goToPurchaseDashboard()">
+            Go to Dashboard
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <!-- Decoration -->
+        <div class="success-paw">
+            <i class="fa-solid fa-paw"></i>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    function goToPurchaseDashboard() {
+        window.location.href =
+            "<%= request.getContextPath() %>/MyPetsServlet";
+    }
+</script>
+
+
+
     <script src="dashboard.js"></script>
 
 </body>

@@ -93,7 +93,8 @@ public class BuySellerPetServlet extends HttpServlet {
 
             try {
 
-                BigDecimal price;
+            	BigDecimal price;
+            	String purchasedPetName;
 
                 // 3. Check and lock the seller listing
                 try (PreparedStatement petPs =
@@ -126,6 +127,7 @@ public class BuySellerPetServlet extends HttpServlet {
                         }
 
                         price = rs.getBigDecimal("price");
+                        purchasedPetName = rs.getString("title");
                     }
                 }
 
@@ -194,6 +196,11 @@ public class BuySellerPetServlet extends HttpServlet {
                     orderId
                 );
 
+             // Store one-time purchase success message
+                session.setAttribute("purchaseSuccess", true);
+                session.setAttribute("purchasedPetName", purchasedPetName);
+                
+                
                 // 8. Redirect to existing My Pets page
                 response.sendRedirect(
                     request.getContextPath() + "/MyPetsServlet"
