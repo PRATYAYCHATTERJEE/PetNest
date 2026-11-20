@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Petora | Checkout</title>
+    <title>PetNest | Checkout</title>
 
     <link rel="stylesheet"
           href="<%= contextPath %>/CSS/seller-checkout.css">
@@ -31,7 +31,7 @@
             Back
         </a>
 
-        <h2>Petora <span>Checkout</span></h2>
+        <h2>PetNest <span>Checkout</span></h2>
 
         <div class="secure-label">
             <i class="fa-solid fa-shield-halved"></i>

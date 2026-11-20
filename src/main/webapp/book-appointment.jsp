@@ -46,7 +46,7 @@ String errorStatus = request.getParameter("error");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Appointment | PawCare</title>
+    <title>Book Appointment | PetNest</title>
 
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -198,7 +198,7 @@ String errorStatus = request.getParameter("error");
     background: #fff0f0;
     border: 1px solid #f0b6b6;
 }
-```
+
         .submit-btn:hover { background: #106536; }
 
         @media (max-width: 550px) {
@@ -217,7 +217,7 @@ String errorStatus = request.getParameter("error");
     <a class="back-link"
        href="<%= request.getContextPath() %>/MyPetsServlet">
         <i class="fa-solid fa-arrow-left"></i>
-        Back to PawCare
+        Back to PetNest
     </a>
 
     <section class="form-card">

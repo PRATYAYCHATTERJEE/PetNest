@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petora | Veterinarian Registration</title>
+    <title>PetNest | Veterinarian Registration</title>
     <link rel="stylesheet" href="CSS/doctor-register.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
     <a href="Doclogin.jsp" class="brand">
         <span class="brand-icon">🐾</span>
         <span>
-            <strong>Petora</strong>
+            <strong>PetNest</strong>
             <small>Veterinary Network</small>
         </span>
     </a>

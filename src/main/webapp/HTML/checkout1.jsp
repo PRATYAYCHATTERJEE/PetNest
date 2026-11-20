@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Petora | Checkout</title>
+<title>PetNest | Checkout</title>
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -312,7 +312,7 @@ body {
             <i class="fa-solid fa-arrow-left"></i> Back
         </a>
 
-        <h2>Petora <span>Checkout</span></h2>
+        <h2>PetNest <span>Checkout</span></h2>
 
         <div class="secure-checkout">
             <i class="fa-solid fa-shield-halved"></i>

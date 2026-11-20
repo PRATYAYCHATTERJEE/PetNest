@@ -44,7 +44,7 @@
 
         <div class="sidebar-promo">
             <div class="promo-pets">🐕 🐈</div>
-            <h3>PawCare</h3>
+            <h3>PetNest</h3>
             <p>Better Pets. Better Lives.</p>
             <div class="promo-paw"><i class="fa-solid fa-paw"></i></div>
         </div>
@@ -65,11 +65,7 @@
             </div>
 
             <div class="topbar-right">
-                <button class="icon-button notification-button"
-                        data-section="notifications" aria-label="Notifications">
-                    <i class="fa-regular fa-bell"></i>
-                    <span class="notification-dot">3</span>
-                </button>
+                
 
                 <div class="topbar-divider"></div>
 
@@ -163,7 +159,7 @@
 
                     <div class="about-image">
                         <img
-                            src="<%=request.getContextPath()%>/images/admin/pawcare-office.jpg"
+                            src="<%=request.getContextPath()%>/images/PetNest_Logo.png"
                             alt="PawCare Company"
                         >
                     </div>

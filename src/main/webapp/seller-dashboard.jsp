@@ -23,7 +23,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seller Dashboard | PawCare</title>
+    <title>Seller Dashboard | PetNest</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/CSS/seller-login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -348,7 +348,7 @@
 <div class="dashboard-wrapper">
     <header class="topbar">
         <a class="brand" href="${pageContext.request.contextPath}/home.jsp">
-            <span class="brand-icon">🐾</span><span>PawCare</span>
+            <span class="brand-icon">🐾</span><span>PetNest</span>
         </a>
         <a class="logout-button" href="${pageContext.request.contextPath}/SellerLogoutServlet">⇥ Log Out</a>
     </header>

@@ -11,7 +11,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Petora | Register</title>
+    <title>PetNest | Register</title>
 
     <link rel="stylesheet" href="CSS/auth.css">
 
@@ -29,13 +29,13 @@
 
         <div class="brand">
 
-            <div class="brand-icon">
-                🐾
-            </div>
+              <div class="admin-brand-icon">
+    <img src="images/PetNest_Logo.png" alt="Petora Logo">
+</div>
 
             <div>
 
-                <h2>Petora</h2>
+                <h2>PetNest</h2>
 
                 <p>
                     Pet Management System
@@ -64,7 +64,7 @@
 
             <p>
 
-                Join Petora and become part of a
+                Join PetNest and become part of a
                 community that believes every pet
                 deserves love, care, and a happy home.
 
@@ -136,7 +136,7 @@
 
 
             <div class="auth-icon">
-                🐶 🐱
+                🐶 
             </div>
 
 
@@ -147,7 +147,7 @@
                 </h1>
 
                 <p>
-                    Start your journey with Petora
+                    Start your journey with PetNest
                 </p>
 
             </div>

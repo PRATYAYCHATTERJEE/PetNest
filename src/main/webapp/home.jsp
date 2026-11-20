@@ -36,7 +36,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PawCare | Dashboard</title>
+    <title>PetNest | Dashboard</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,7 +64,7 @@
             </div>
 
             <div>
-                <h2>Paw<span>Nest</span></h2>
+                <h2>Pet<span>Nest</span></h2>
                 <small>Pets. Belong. Always.</small>
             </div>
         </div>
@@ -123,22 +123,7 @@
 
         </nav>
 
-        <div class="help-card">
-            <div class="help-content">
-                <h3>Need Help?</h3>
-                <p>We're here for you and your pets.</p>
-
-                <button type="button" onclick="showSection('messages', null)">
-                    Contact Support
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-            </div>
-
-            <div class="help-decoration">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-paw"></i>
-            </div>
-        </div>
+        
 
     </aside>
 
@@ -327,7 +312,7 @@
 <section class="info-cards-section">
 
     <div class="info-section-heading">
-        <span>WHY PETORA?</span>
+        <span>WHY PETNESTT?</span>
         <h2>Everything for a Happier Pet Life</h2>
         <p>Making pet care simpler, safer and better for everyone.</p>
     </div>
@@ -586,7 +571,7 @@
             <span class="seller-label">SELL WITH PETORA</span>
 
             <h1>
-                Become a <span>Petora Seller</span>
+                Become a <span>PetNestSeller</span>
             </h1>
 
             <h2>Turn Your Love for Pets into a Partnership</h2>
@@ -903,7 +888,7 @@
     <!-- Store Hero -->
     <div class="store-hero">
         <div class="store-hero-copy">
-            <span class="store-eyebrow">PAWCARE STORE</span>
+            <span class="store-eyebrow">PET NEST STORE</span>
             <h1>Everything for Your <span>Furry Friends</span></h1>
             <p>Healthy, happy pets start with the right care.</p>
             <p>Explore products selected for your beloved companions.</p>
@@ -915,10 +900,7 @@
             </div>
         </div>
 
-        <div class="store-hero-image">
-            <img src="images/store-hero.jpg"
-                 alt="Happy pets and pet care products">
-        </div>
+        
     </div>
 
     <!-- Three Categories -->
@@ -1099,7 +1081,7 @@
                              data-category="health" data-pet="dogs"
                              data-name="Pet Shampoo" data-price="299">
                         <div class="store-product-image">
-                            <img src="images/pet-shampoo.jpg" alt="Pet shampoo"
+                            <img src="images/products/pet-shampoo.jpg" alt="Pet shampoo"
                                  onerror="this.style.display='none'">
                             <span class="store-badge">Essential</span>
                             <button class="store-wishlist" onclick="toggleWishlist(this)"
@@ -1123,7 +1105,7 @@
                              data-category="health" data-pet="all"
                              data-name="Pet First Aid Kit" data-price="599">
                         <div class="store-product-image">
-                            <img src="images/pet-first-aid.jpg" alt="Pet first aid kit"
+                            <img src="images/products/pet-first-aid.jpg" alt="Pet first aid kit"
                                  onerror="this.style.display='none'">
                             <button class="store-wishlist" onclick="toggleWishlist(this)"
                                     aria-label="Add to wishlist">
@@ -1146,7 +1128,7 @@
                              data-category="health" data-pet="cats"
                              data-name="Cat Grooming Brush" data-price="249">
                         <div class="store-product-image">
-                            <img src="images/cat-brush.jpg" alt="Cat grooming brush"
+                            <img src="images/products/cat-brush.jpg" alt="Cat grooming brush"
                                  onerror="this.style.display='none'">
                             <button class="store-wishlist" onclick="toggleWishlist(this)"
                                     aria-label="Add to wishlist">
@@ -1176,7 +1158,7 @@
                              data-category="accessories" data-pet="dogs"
                              data-name="Dog Collar" data-price="199">
                         <div class="store-product-image">
-                            <img src="images/dog-collar.jpg" alt="Dog collar"
+                            <img src="images/products/dog-collar.jpg" alt="Dog collar"
                                  onerror="this.style.display='none'">
                             <button class="store-wishlist" onclick="toggleWishlist(this)"
                                     aria-label="Add to wishlist">
@@ -1199,7 +1181,7 @@
                              data-category="accessories" data-pet="dogs"
                              data-name="Pet Hoodie" data-price="499">
                         <div class="store-product-image">
-                            <img src="images/pet-hoodie.jpg" alt="Pet hoodie"
+                            <img src="images/products/pet-hoodie.jpg" alt="Pet hoodie"
                                  onerror="this.style.display='none'">
                             <button class="store-wishlist" onclick="toggleWishlist(this)"
                                     aria-label="Add to wishlist">
@@ -1222,7 +1204,7 @@
                              data-category="accessories" data-pet="all"
                              data-name="Rope Toy Set" data-price="349">
                         <div class="store-product-image">
-                            <img src="images/rope-toy.jpg" alt="Pet rope toys"
+                            <img src="images/products/rope-toy.jpg" alt="Pet rope toys"
                                  onerror="this.style.display='none'">
                             <button class="store-wishlist" onclick="toggleWishlist(this)"
                                     aria-label="Add to wishlist">

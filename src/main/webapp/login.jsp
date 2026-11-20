@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petora | Login</title>
+    <title>PetNest | Login</title>
     <link rel="stylesheet" href="CSS/auth.css">
 </head>
 
@@ -19,9 +19,11 @@
 
         <!-- BRAND -->
         <div class="brand">
-            <div class="brand-icon">🐾</div>
+              <div class="admin-brand-icon">
+    <img src="images/PetNest_Logo.png" alt="Petora Logo">
+</div>
             <div class="brand-text">
-                <h2>Petora</h2>
+                <h2>PetNest</h2>
                 <p>Pet Management System</p>
             </div>
         </div>
@@ -47,7 +49,7 @@
             <!-- HEADING -->
             <div class="auth-heading">
                 <h1>Welcome <span>Back</span></h1>
-                <p>Login to continue your journey with Petora</p>
+                <p>Login to continue your journey with PetNest</p>
             </div>
 
 
@@ -109,9 +111,7 @@
                         <span>Remember me</span>
                     </label>
 
-                    <a href="forgot-password.jsp">
-                        Forgot Password?
-                    </a>
+                   
 
                 </div>
 

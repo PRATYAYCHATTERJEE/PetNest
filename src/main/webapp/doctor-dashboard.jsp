@@ -128,7 +128,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Doctor Dashboard | Petora</title>
+<title>Doctor Dashboard | PetNest</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -219,7 +219,7 @@ button,a{font:inherit}a{text-decoration:none;color:inherit}
 <body>
 <div class="layout">
 <aside class="sidebar" id="sidebar">
-    <a href="#overview" class="brand"><div class="brand-icon"><i class="fa-solid fa-paw"></i></div>Pet<span>ora</span></a>
+    <a href="#overview" class="brand"><div class="brand-icon"><i class="fa-solid fa-paw"></i></div>Pet<span>Nest</span></a>
     <div class="menu-label">DOCTOR WORKSPACE</div>
     <nav class="nav-menu">
         <a href="#overview" class="nav-link active"><i class="fa-solid fa-house"></i>Dashboard</a>
@@ -238,7 +238,7 @@ button,a{font:inherit}a{text-decoration:none;color:inherit}
 <header class="topbar">
     <div style="display:flex;align-items:center;gap:14px;">
         <button class="mobile-menu" id="mobileMenu" type="button" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
-        <div><h1>Doctor Dashboard</h1><p>Welcome to your Petora workspace</p></div>
+        <div><h1>Doctor Dashboard</h1><p>Welcome to your PetNest workspace</p></div>
     </div>
     <div class="topbar-right"><span class="verified-pill"><i class="fa-solid fa-circle-check"></i>Verified Doctor</span><div class="avatar"><%= esc.apply(initials) %></div></div>
 </header>

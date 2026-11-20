@@ -152,7 +152,7 @@ try {
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
 
-    <title>Your Cart - PawCare</title>
+    <title>Your Cart - PetNest</title>
 
     <style>
         * {
@@ -387,12 +387,12 @@ try {
 <main class="cart-container">
 
     <a class="back-link" href="home.jsp">
-        ← Back to PawCare
+        ← Back to PetNest
     </a>
 
     <header class="cart-header">
 
-        <h1>Your PawCare Cart 🛒</h1>
+        <h1>Your PetNest Cart 🛒</h1>
 
         <span class="cart-count">
             <%= totalQuantity %> item(s)

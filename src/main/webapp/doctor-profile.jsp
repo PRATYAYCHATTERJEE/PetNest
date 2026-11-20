@@ -1,4 +1,4 @@
-```jsp
+
 <%@ page import="java.util.Map" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
@@ -45,7 +45,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor Profile | PawCare</title>
+    <title>Doctor Profile | PetNest</title>
 
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -306,7 +306,7 @@
     <a class="back-link"
        href="<%= request.getContextPath() %>/MyPetsServlet">
         <i class="fa-solid fa-arrow-left"></i>
-        Back to PawCare
+        Back to PetNest
     </a>
 
     <article class="profile-card">
